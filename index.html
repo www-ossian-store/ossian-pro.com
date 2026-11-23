@@ -2002,13 +2002,13 @@
       <div class="brand-logo" style="margin: 0 auto 14px; width: 52px; height: 52px;">
         <i class="fa-solid fa-shield-halved gold-icon" style="font-size: 24px;"></i>
       </div>
-      <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 6px;">OSSIAN PRO Banking Lock</h3>
+      <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 6px;">OSSIAN PRO Security Lock</h3>
       <p style="font-size: 12.5px; color: #94a3b8; margin-bottom: 14px;" id="pinLockSub">
-        Enter or paste your permanent 4-digit Banking Security PIN to open OSSIAN PRO.
+        Enter or paste your permanent 4-digit Security PIN to open OSSIAN PRO.
       </p>
       <div class="lock-timer-box" id="pinLockTimerBox" style="text-align:left;">
         <i class="fa-solid fa-clock"></i>
-        <span id="pinLockTimerText">3 wrong PIN attempts! Please wait 120 seconds.</span>
+        <span id="pinLockTimerText">Try again in ! 120 seconds.</span>
       </div>
       <form id="pinUnlockForm">
         <div class="form-group">
@@ -2043,16 +2043,16 @@
         </div>
       </div>
       <div class="sheet-desc" style="margin-bottom:14px;">
-        Forgot your 4-digit Banking Security PIN or need help with an account suspension? Send a support ticket to OSSIAN PRO Customer Service below.
+        Forgot your 4-digit Security PIN or need help with an account suspension? Send a support ticket to OSSIAN PRO Customer Service below.
       </div>
       <form id="customerServiceForm">
         <div class="form-group">
-          <label>Your Name or Email</label>
-          <input type="text" id="csContactInput" placeholder="Enter your registered email or name" required />
+          <label>Your Email</label>
+          <input type="text" id="csContactInput" placeholder="Enter your registered email..." required />
         </div>
         <div class="form-group">
           <label>Describe Your Issue</label>
-          <textarea id="csMessageInput" rows="3" placeholder="e.g. Need assistance with Banking Lock PIN or account suspension..." required></textarea>
+          <textarea id="csMessageInput" rows="3" placeholder="Need assistance with Banking Lock PIN or account suspension..." required></textarea>
         </div>
         <div style="display:flex; gap:8px;">
           <button type="submit" class="btn btn-primary" id="csSubmitBtn">
@@ -2102,7 +2102,7 @@
       <section id="page-home" class="page active">
         <div class="hero-card">
           <h2 id="heroWelcomeTitle"><i class="fa-solid fa-crown gold-icon"></i> Welcome to OSSIAN PRO</h2>
-          <p>Tap any app or tool below to view its details and launch with banking-grade protection.</p>
+          <p>Tap any app or website below to view its details and launch with Security-grade protection.</p>
           <div class="hero-wallet-bar" id="heroWalletBar">
             <span class="hero-wallet-pill"><i class="fa-solid fa-wallet gold-icon"></i> Balance: <strong id="heroBalanceVal">$0.00</strong></span>
             <span class="hero-wallet-pill"><i class="fa-solid fa-coins gold-icon"></i> Tokens: <strong id="heroTokensVal">0</strong></span>
@@ -2113,7 +2113,7 @@
 
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass gold-icon search-icon"></i>
-          <input type="text" id="homeSearchInput" placeholder="Search apps & tools on Home..." autocomplete="off" />
+          <input type="text" id="homeSearchInput" placeholder="Search apps & website on Home..." autocomplete="off" />
           <div id="homeSuggestions" class="search-suggestions"></div>
         </div>
 
@@ -2121,9 +2121,9 @@
         <div class="section-header">
           <div class="section-title">
             <span class="gold-badge-icon"><i class="fa-solid fa-toolbox gold-icon"></i></span>
-            Pro Tools
+            Main App
           </div>
-          <span class="category-pill" id="toolsCountBadge">4 Tools</span>
+          <span class="category-pill" id="toolsCountBadge">APP</span>
         </div>
         <div id="homeToolsGrid" class="launcher-grid"></div>
 
@@ -2377,10 +2377,10 @@
               <span class="gold-badge-icon"><i class="fa-solid fa-download gold-icon"></i></span>
               <div>
                 <div class="setting-title">Direct Download</div>
-                <div class="setting-sub" id="directDownloadSub">Download Mobile App (PWA • Auto-Updates)</div>
+                <div class="setting-sub" id="directDownloadSub">Download Mobile App • Auto-Updates</div>
               </div>
             </div>
-            <span class="category-pill" id="directDownloadBadge">PWA</span>
+            <span class="category-pill" id="directDownloadBadge">ADS</span>
           </div>
         </div>
 
@@ -2415,7 +2415,7 @@
           <form id="loginForm">
             <div class="lock-timer-box" id="loginLockBox">
               <i class="fa-solid fa-clock"></i>
-              <span id="loginLockText">Too many wrong attempts! Try again in 60s.</span>
+              <span id="loginLockText"> Try again in 60s.</span>
             </div>
             <div class="form-group">
               <label>Email</label>
@@ -2437,7 +2437,7 @@
           <form id="registerForm" style="display:none;">
             <div class="security-notice-bar">
               <i class="fa-solid fa-gift gold-icon"></i>
-              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! (1 account per mobile phone &amp; IP protected; duplicate accounts are auto-suspended.)</span>
+              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! Welcome to our website &amp;</span>
             </div>
             <div class="form-group">
               <label>1. Name</label>
@@ -2456,8 +2456,8 @@
               <input type="password" id="regConfirmPassword" placeholder="Re-enter password" required />
             </div>
             <div class="form-group">
-              <label>5. Invite Code (Optional)</label>
-              <input type="text" id="regInviteCode" placeholder="Enter invite code (optional)" />
+              <label>5. Invite Code </label>
+              <input type="text" id="regInviteCode" placeholder="Enter invite code " />
             </div>
             <button type="submit" class="btn btn-primary" id="registerSubmitBtn" style="margin-top:6px;">
               <i class="fa-solid fa-user-plus"></i> Register &amp; Claim 5K Tokens
@@ -2468,7 +2468,7 @@
           <div id="qrLoginSection" style="display:none;">
             <div class="lock-timer-box" id="qrLockBox">
               <i class="fa-solid fa-clock"></i>
-              <span id="qrLockText">3 wrong QR attempts! Please wait 120 seconds.</span>
+              <span id="qrLockText">Try again 120 seconds.</span>
             </div>
 
             <div class="qr-scanner-box">
@@ -2595,7 +2595,7 @@
         <div class="panel-card">
           <div class="lock-timer-box" id="promoLockBox">
             <i class="fa-solid fa-clock"></i>
-            <span id="promoLockText">Too many wrong promo codes! Try again in 60s.</span>
+            <span id="promoLockText">Try again in 60s.</span>
           </div>
           <form id="promoForm">
             <div class="form-group">
@@ -2603,7 +2603,7 @@
               <input type="text" id="promoCodeInput" placeholder="Paste your promo code here" required />
             </div>
             <button type="submit" class="btn btn-primary" id="promoApplyBtn">
-              <i class="fa-solid fa-check-circle"></i> Apply Promo Code
+              <i class="fa-solid fa-check-circle"></i> Apply 
             </button>
           </form>
         </div>
@@ -2630,7 +2630,7 @@
 
         <div class="panel-card">
           <div style="font-size:13px; font-weight:700; margin-bottom:10px;">
-            1. Select Feedback Option (6 Options)
+            1. Select Feedback Option 
           </div>
           <div class="feedback-options-grid" id="feedbackOptionsGrid">
             <div class="feedback-option-card" data-opt="App Bug / Error" onclick="selectFeedbackOption(this, 'App Bug / Error')">
@@ -2661,7 +2661,7 @@
 
           <form id="feedbackForm">
             <div class="form-group">
-              <label>2. Write Your Feedback (50 to 600 Words)</label>
+              <label>2. Write Your Feedback </label>
               <textarea id="feedbackText" rows="7" placeholder="Write between 50 and 600 words. To unlock Submit Application, select 'App Upload Request' and describe your website/app request here..." required></textarea>
               <div class="word-counter-row">
                 <span id="feedbackSelectedLabel">Selected: None</span>
@@ -2727,7 +2727,7 @@
             </div>
             <div class="info-kv-item">
               <div>
-                <div class="info-kv-label">Admin Tools Loaded</div>
+                <div class="info-kv-label">Main App Loaded</div>
                 <div class="info-kv-val" id="syncToolsCount">0 / 4</div>
               </div>
               <i class="fa-solid fa-toolbox gold-icon"></i>
@@ -2771,7 +2771,7 @@
             <div class="setting-left">
               <span class="gold-badge-icon"><i class="fa-solid fa-vault gold-icon"></i></span>
               <div>
-                <div class="setting-title">Banking Security</div>
+                <div class="setting-title">High Security</div>
                 <div class="setting-sub" id="bankingSecurityRowSub">IP &amp; Device Guard Active • Blackout ON</div>
               </div>
             </div>
@@ -2908,7 +2908,7 @@
               <i class="fa-solid fa-arrow-left gold-icon"></i>
             </button>
             <span class="gold-badge-icon"><i class="fa-solid fa-vault gold-icon"></i></span>
-            <div class="subpage-title">Banking Security</div>
+            <div class="subpage-title">High Security</div>
           </div>
         </div>
 
@@ -2947,18 +2947,18 @@
 
         <div class="panel-card">
           <div style="font-size:14px; font-weight:800; margin-bottom:10px;">
-            <i class="fa-solid fa-key gold-icon"></i> 4-Digit Banking Security PIN
+            <i class="fa-solid fa-key gold-icon"></i> 4-Digit High Security PIN
           </div>
           <p style="font-size:12.5px; color:var(--text-muted); line-height:1.5; margin-bottom:14px;">
-            Once saved, your 4-digit Banking Security PIN is <strong>permanently active</strong>. Entering or pasting this saved PIN is required to open OSSIAN PRO and every website or app until you delete the PIN.
+            Once saved, your 4-digit High Security PIN is <strong>permanently active</strong>. Entering or pasting this saved PIN is required to open OSSIAN PRO and every website or app until you delete the PIN.
           </p>
           <form id="setPinForm">
             <div class="form-group">
-              <label>New 4-Digit Banking PIN</label>
+              <label>New 4-Digit PIN</label>
               <input type="password" id="newBankingPin" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Enter 4 digits (e.g. 4829)" required />
             </div>
             <div class="form-group">
-              <label>Confirm 4-Digit Banking PIN</label>
+              <label>Confirm 4-Digit PIN</label>
               <input type="password" id="confirmBankingPin" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Re-enter 4 digits" required />
             </div>
             <button type="submit" class="btn btn-primary">
@@ -3262,7 +3262,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Notes (Optional)</label>
+              <label>Notes </label>
               <input type="text" id="apptNoteInput" placeholder="Short note..." />
             </div>
             <button type="submit" class="btn btn-primary">
@@ -3291,7 +3291,7 @@
 
         <div class="panel-card" style="padding:12px 14px; margin-bottom:14px;">
           <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
-            <i class="fa-solid fa-shield-halved gold-icon"></i> Submitted websites remain in <strong>Pending</strong> until approved from the Admin Panel. Once approved, they progress through all 6 stages.
+            <i class="fa-solid fa-shield-halved gold-icon"></i> Submitted websites remain in <strong>Pending</strong> until approved from the Company. Once approved, they progress through all 6 stages.
           </p>
         </div>
 
@@ -3457,11 +3457,11 @@
       </div>
       <div class="lock-timer-box" id="appPinLockTimerBox">
         <i class="fa-solid fa-clock"></i>
-        <span id="appPinLockTimerText">3 wrong PIN attempts! Please wait 120 seconds.</span>
+        <span id="appPinLockTimerText"> Try again in 120 seconds.</span>
       </div>
       <form id="appPinVerifyForm">
         <div class="form-group">
-          <label>Saved 4-Digit Banking Security PIN</label>
+          <label>Saved 4-Digit Security PIN</label>
           <div class="pin-input-row">
             <input type="password" id="appPinInput" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Enter or paste 4-digit PIN" style="text-align:center; letter-spacing:8px; font-size:18px; font-weight:800;" required />
             <button type="button" class="btn btn-secondary btn-sm" onclick="pastePinInto('appPinInput')" style="height:46px;">
@@ -3489,7 +3489,7 @@
         </span>
         <div style="flex:1; min-width:0;">
           <h3 style="font-size:17px; font-weight:800;">Direct Download — OSSIAN PRO App</h3>
-          <div style="font-size:12px; color:var(--text-muted);" id="pwaModalSubtitle">PWA Mobile App • Auto-Updates with Website</div>
+          <div style="font-size:12px; color:var(--text-muted);" id="pwaModalSubtitle"> Mobile App • Auto-Updates with Website</div>
         </div>
       </div>
 
@@ -3497,7 +3497,7 @@
         <div class="pwa-progress-fill" id="pwaProgressBar"></div>
       </div>
       <div id="pwaStatusMsg" style="font-size:13px; font-weight:700; margin-bottom:12px; color:var(--primary);">
-        Preparing OSSIAN PRO PWA...
+        Preparing OSSIAN PRO ...
       </div>
 
       <div id="pwaManualFallbackBox" class="sheet-desc" style="display:none; margin-bottom:14px;"></div>
