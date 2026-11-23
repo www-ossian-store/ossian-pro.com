@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Permissions-Policy" content="display-capture=()" />
-  <meta name="description" content="OSSIAN PRO - Fast, secure Web Apps Launcher to discover, organize, and launch official and favorite web applications in one place." />
-  <meta name="keywords" content="OSSIAN PRO, web apps, launcher, AI tools, online apps, web applications, productivity, gaming, shopping" />
-  <meta name="author" content="OSSIAN PRO" />
+  <meta name="description" content="OSSIAN STORE - Fast, secure Web Apps Launcher to discover, organize, and launch official and favorite web applications in one place." />
+  <meta name="keywords" content="OSSIAN STORE, web apps, launcher, AI tools, online apps, web applications, productivity, gaming, shopping" />
+  <meta name="author" content="OSSIAN STORE" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="OSSIAN PRO" />
-  <meta property="og:title" content="OSSIAN PRO - Web Apps Launcher" />
-  <meta property="og:description" content="Launch official, favorite, and popular web applications instantly with OSSIAN PRO." />
+  <meta name="apple-mobile-web-app-title" content="OSSIAN STORE" />
+  <meta property="og:title" content="OSSIAN STORE - Web Apps Launcher" />
+  <meta property="og:description" content="Launch official, favorite, and popular web applications instantly with OSSIAN STORE." />
   <meta property="og:type" content="website" />
-  <title>OSSIAN PRO</title>
-  <!-- OSSIAN PRO Favicon -->
+  <title>OSSIAN STORE</title>
+  <!-- OSSIAN STORE Favicon -->
   <link id="siteFaviconLink" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23fde047'/%3E%3Cstop offset='55%25' stop-color='%23f59e0b'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%230f172a'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='url(%23g)' stroke-width='6'/%3E%3Cpath d='M32 10 L36 22 L32 19 L28 22 Z' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='32' r='6' fill='url(%23g)'/%3E%3C/svg%3E" />
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -140,7 +140,7 @@
       text-align: center;
     }
 
-    /* Easypaisa-Style Account Suspended Overlay */
+    /* Account Suspended Overlay */
     .suspended-overlay {
       position: fixed;
       inset: 0;
@@ -309,7 +309,7 @@
       gap: 8px;
     }
 
-    /* Easypaisa-style Golden fa- Icon Styling */
+    /* Golden fa- Icon Styling */
     .gold-icon {
       color: #f59e0b;
       background: var(--gold-grad);
@@ -1837,13 +1837,6 @@
       margin-bottom: 14px;
     }
 
-    .sheet-url {
-      font-size: 12px;
-      color: var(--primary);
-      word-break: break-all;
-      margin-top: 3px;
-    }
-
     .sheet-desc {
       font-size: 14px;
       line-height: 1.55;
@@ -1857,7 +1850,7 @@
 
     .sheet-buttons {
       display: grid;
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: 1fr auto;
       gap: 8px;
     }
 
@@ -1940,12 +1933,12 @@
   <!-- Solid Black Anti-Screenshot / Anti-Recording Privacy Shield -->
   <div id="blackoutShield" class="blackout-shield" aria-hidden="true"></div>
 
-  <!-- Easypaisa-Style Account Suspended Overlay -->
+  <!-- Account Suspended Overlay -->
   <div id="suspendedOverlay" class="suspended-overlay">
     <div class="suspended-card">
       <div class="ep-header-banner">
         <div class="ep-brand-row">
-          <span><i class="fa-solid fa-shield-halved"></i> OSSIAN PRO SECURITY</span>
+          <span><i class="fa-solid fa-shield-halved"></i> OSSIAN STORE SECURITY</span>
           <span class="ep-status-chip">Suspended</span>
         </div>
         <div style="font-size:12px; opacity:0.9;">IP &amp; Single-Device Protection Active</div>
@@ -2002,13 +1995,13 @@
       <div class="brand-logo" style="margin: 0 auto 14px; width: 52px; height: 52px;">
         <i class="fa-solid fa-shield-halved gold-icon" style="font-size: 24px;"></i>
       </div>
-      <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 6px;">OSSIAN PRO Security Lock</h3>
+      <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 6px;">OSSIAN STORE Banking Lock</h3>
       <p style="font-size: 12.5px; color: #94a3b8; margin-bottom: 14px;" id="pinLockSub">
-        Enter or paste your permanent 4-digit Security PIN to open OSSIAN PRO.
+        Enter or paste your permanent 4-digit Banking Security PIN to open OSSIAN STORE.
       </p>
       <div class="lock-timer-box" id="pinLockTimerBox" style="text-align:left;">
         <i class="fa-solid fa-clock"></i>
-        <span id="pinLockTimerText">Try again in ! 120 seconds.</span>
+        <span id="pinLockTimerText">3 wrong PIN attempts! Please wait 120 seconds.</span>
       </div>
       <form id="pinUnlockForm">
         <div class="form-group">
@@ -2020,7 +2013,7 @@
           </div>
         </div>
         <button type="submit" class="btn btn-primary" id="pinUnlockBtn">
-          <i class="fa-solid fa-unlock-keyhole"></i> Unlock OSSIAN PRO
+          <i class="fa-solid fa-unlock-keyhole"></i> Unlock OSSIAN STORE
         </button>
       </form>
       <button type="button" class="btn btn-secondary" onclick="openCustomerServiceModal()" style="margin-top:10px; background:#1e293b; color:#f8fafc; border-color:#334155;">
@@ -2038,21 +2031,21 @@
           <i class="fa-solid fa-headset gold-icon"></i>
         </span>
         <div>
-          <h3 style="font-size:17px; font-weight:800;">OSSIAN PRO Customer Service</h3>
+          <h3 style="font-size:17px; font-weight:800;">OSSIAN STORE Customer Service</h3>
           <div style="font-size:12px; color:var(--text-muted);">24/7 Security, Suspension &amp; PIN Support</div>
         </div>
       </div>
       <div class="sheet-desc" style="margin-bottom:14px;">
-        Forgot your 4-digit Security PIN or need help with an account suspension? Send a support ticket to OSSIAN PRO Customer Service below.
+        Forgot your 4-digit Banking Security PIN or need help with an account suspension? Send a support ticket to OSSIAN STORE Customer Service below.
       </div>
       <form id="customerServiceForm">
         <div class="form-group">
-          <label>Your Email</label>
-          <input type="text" id="csContactInput" placeholder="Enter your registered email..." required />
+          <label>Your Name or Email</label>
+          <input type="text" id="csContactInput" placeholder="Enter your registered email or name" required />
         </div>
         <div class="form-group">
           <label>Describe Your Issue</label>
-          <textarea id="csMessageInput" rows="3" placeholder="Need assistance with Banking Lock PIN or account suspension..." required></textarea>
+          <textarea id="csMessageInput" rows="3" placeholder="e.g. Need assistance with Banking Lock PIN or account suspension..." required></textarea>
         </div>
         <div style="display:flex; gap:8px;">
           <button type="submit" class="btn btn-primary" id="csSubmitBtn">
@@ -2067,7 +2060,7 @@
   <div class="app-shell">
     <header class="top-header">
       <div class="brand">
-        <div class="brand-logo" id="headerBrandLogo" aria-label="OSSIAN PRO Logo">
+        <div class="brand-logo" id="headerBrandLogo" aria-label="OSSIAN STORE Logo">
           <svg viewBox="0 0 64 64" fill="none">
             <defs>
               <linearGradient id="ossianGold" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
@@ -2082,7 +2075,7 @@
           </svg>
         </div>
         <div>
-          <div class="brand-title">OSSIAN PRO</div>
+          <div class="brand-title">OSSIAN STORE</div>
           <span class="brand-sub">Secure Web Apps Launcher</span>
         </div>
       </div>
@@ -2101,10 +2094,10 @@
       <!-- 1. HOME PAGE -->
       <section id="page-home" class="page active">
         <div class="hero-card">
-          <h2 id="heroWelcomeTitle"><i class="fa-solid fa-crown gold-icon"></i> Welcome to OSSIAN PRO</h2>
-          <p>Tap any app or website below to view its details and launch with Security-grade protection.</p>
+          <h2 id="heroWelcomeTitle"><i class="fa-solid fa-crown gold-icon"></i> Welcome to OSSIAN STORE</h2>
+          <p>Tap any app or tool below to view its details and launch with banking-grade protection.</p>
           <div class="hero-wallet-bar" id="heroWalletBar">
-            <span class="hero-wallet-pill"><i class="fa-solid fa-wallet gold-icon"></i> Balance: <strong id="heroBalanceVal">$0.00</strong></span>
+            <span class="hero-wallet-pill" id="heroBalancePill"><i class="fa-solid fa-wallet gold-icon"></i> Balance: <strong id="heroBalanceVal">$0.00</strong></span>
             <span class="hero-wallet-pill"><i class="fa-solid fa-coins gold-icon"></i> Tokens: <strong id="heroTokensVal">0</strong></span>
           </div>
         </div>
@@ -2113,7 +2106,7 @@
 
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass gold-icon search-icon"></i>
-          <input type="text" id="homeSearchInput" placeholder="Search apps & website on Home..." autocomplete="off" />
+          <input type="text" id="homeSearchInput" placeholder="Search apps & tools on Home..." autocomplete="off" />
           <div id="homeSuggestions" class="search-suggestions"></div>
         </div>
 
@@ -2121,9 +2114,9 @@
         <div class="section-header">
           <div class="section-title">
             <span class="gold-badge-icon"><i class="fa-solid fa-toolbox gold-icon"></i></span>
-            Main App
+            Pro Tools
           </div>
-          <span class="category-pill" id="toolsCountBadge">APP</span>
+          <span class="category-pill" id="toolsCountBadge">4 Tools</span>
         </div>
         <div id="homeToolsGrid" class="launcher-grid"></div>
 
@@ -2224,9 +2217,9 @@
           </div>
           <div style="flex:1; min-width:0;">
             <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
-              <h3 id="meProfileTitle" style="font-size:17px; margin-bottom:2px;">OSSIAN PRO</h3>
+              <h3 id="meProfileTitle" style="font-size:17px; margin-bottom:2px;">OSSIAN STORE</h3>
               <div class="wallet-badges-row" id="meWalletBadges">
-                <span class="wallet-pill"><i class="fa-solid fa-wallet gold-icon"></i> Balance: <strong id="meBalanceVal">$0.00</strong></span>
+                <span class="wallet-pill" id="meBalancePill"><i class="fa-solid fa-wallet gold-icon"></i> Balance: <strong id="meBalanceVal">$0.00</strong></span>
                 <span class="wallet-pill token-pill"><i class="fa-solid fa-coins gold-icon"></i> <strong id="meTokensVal">0</strong> Tokens</span>
               </div>
             </div>
@@ -2257,7 +2250,7 @@
               <span class="gold-badge-icon"><i class="fa-solid fa-id-card gold-icon"></i></span>
               <div>
                 <div class="setting-title">Account Information</div>
-                <div class="setting-sub">Name, Balance, Tokens, UID, IP &amp; Invite Code</div>
+                <div class="setting-sub" id="accountInfoRowSub">Name, Balance, Tokens, UID, IP &amp; Invite Code</div>
               </div>
             </div>
             <i class="fa-solid fa-chevron-right row-arrow"></i>
@@ -2299,13 +2292,13 @@
             <i class="fa-solid fa-chevron-right row-arrow"></i>
           </div>
 
-          <!-- 6. Recently Opened -->
+          <!-- 6. Recently Opened (72-Hour History) -->
           <div class="setting-row clickable" onclick="openRecentPage()">
             <div class="setting-left">
               <span class="gold-badge-icon"><i class="fa-solid fa-clock-rotate-left gold-icon"></i></span>
               <div>
                 <div class="setting-title">Recently Opened</div>
-                <div class="setting-sub" id="recentRowSub">Apps you opened recently</div>
+                <div class="setting-sub" id="recentRowSub">Apps used in the last 72 hours</div>
               </div>
             </div>
             <i class="fa-solid fa-chevron-right row-arrow"></i>
@@ -2377,10 +2370,10 @@
               <span class="gold-badge-icon"><i class="fa-solid fa-download gold-icon"></i></span>
               <div>
                 <div class="setting-title">Direct Download</div>
-                <div class="setting-sub" id="directDownloadSub">Download Mobile App • Auto-Updates</div>
+                <div class="setting-sub" id="directDownloadSub">Download Mobile App (PWA • Auto-Updates)</div>
               </div>
             </div>
-            <span class="category-pill" id="directDownloadBadge">ADS</span>
+            <span class="category-pill" id="directDownloadBadge">PWA</span>
           </div>
         </div>
 
@@ -2415,7 +2408,7 @@
           <form id="loginForm">
             <div class="lock-timer-box" id="loginLockBox">
               <i class="fa-solid fa-clock"></i>
-              <span id="loginLockText"> Try again in 60s.</span>
+              <span id="loginLockText">Too many wrong attempts! Try again in 60s.</span>
             </div>
             <div class="form-group">
               <label>Email</label>
@@ -2437,7 +2430,7 @@
           <form id="registerForm" style="display:none;">
             <div class="security-notice-bar">
               <i class="fa-solid fa-gift gold-icon"></i>
-              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! Welcome to our website...</span>
+              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! (1 account per mobile phone &amp; IP protected; duplicate accounts are auto-suspended.)</span>
             </div>
             <div class="form-group">
               <label>1. Name</label>
@@ -2456,8 +2449,8 @@
               <input type="password" id="regConfirmPassword" placeholder="Re-enter password" required />
             </div>
             <div class="form-group">
-              <label>5. Invite Code </label>
-              <input type="text" id="regInviteCode" placeholder="Enter invite code " />
+              <label>5. Invite Code (Optional)</label>
+              <input type="text" id="regInviteCode" placeholder="Enter invite code (optional)" />
             </div>
             <button type="submit" class="btn btn-primary" id="registerSubmitBtn" style="margin-top:6px;">
               <i class="fa-solid fa-user-plus"></i> Register &amp; Claim 5K Tokens
@@ -2468,7 +2461,7 @@
           <div id="qrLoginSection" style="display:none;">
             <div class="lock-timer-box" id="qrLockBox">
               <i class="fa-solid fa-clock"></i>
-              <span id="qrLockText">Try again 120 seconds.</span>
+              <span id="qrLockText">3 wrong QR attempts! Please wait 120 seconds.</span>
             </div>
 
             <div class="qr-scanner-box">
@@ -2477,7 +2470,7 @@
                 <div class="qr-scan-frame"></div>
               </div>
               <p id="qrScannerHint" style="font-size:12.5px; color:var(--text-muted); line-height:1.45; margin-bottom:12px;">
-                Scan your private OSSIAN PRO Login QR code using your camera or upload the QR image saved in your gallery.
+                Scan your private OSSIAN STORE Login QR code using your camera or upload the QR image saved in your gallery.
               </p>
               <div style="display:flex; flex-direction:column; gap:10px;">
                 <button type="button" class="btn btn-primary" id="startQrScanBtn" onclick="toggleQrScanner()">
@@ -2559,13 +2552,13 @@
 
         <div class="panel-card">
           <p style="font-size:12px; color:var(--text-muted); margin-bottom:12px;">
-            <i class="fa-solid fa-shield-halved gold-icon"></i> Only official announcements from OSSIAN PRO appear here.
+            <i class="fa-solid fa-shield-halved gold-icon"></i> Only official announcements from OSSIAN STORE appear here.
           </p>
           <div id="messagesListBody"></div>
         </div>
       </section>
 
-      <!-- ME SUBPAGE 4: RECENTLY OPENED -->
+      <!-- ME SUBPAGE 4: RECENTLY OPENED (72 Hours) -->
       <section id="page-me-recent" class="page">
         <div class="subpage-header">
           <div class="subpage-header-left">
@@ -2575,6 +2568,7 @@
             <span class="gold-badge-icon"><i class="fa-solid fa-clock-rotate-left gold-icon"></i></span>
             <div class="subpage-title">Recently Opened</div>
           </div>
+          <span class="category-pill">72 Hours</span>
         </div>
 
         <div id="recentAppsGrid" class="launcher-grid"></div>
@@ -2595,7 +2589,7 @@
         <div class="panel-card">
           <div class="lock-timer-box" id="promoLockBox">
             <i class="fa-solid fa-clock"></i>
-            <span id="promoLockText">Try again in 60s.</span>
+            <span id="promoLockText">Too many wrong promo codes! Try again in 60s.</span>
           </div>
           <form id="promoForm">
             <div class="form-group">
@@ -2603,7 +2597,7 @@
               <input type="text" id="promoCodeInput" placeholder="Paste your promo code here" required />
             </div>
             <button type="submit" class="btn btn-primary" id="promoApplyBtn">
-              <i class="fa-solid fa-check-circle"></i> Apply 
+              <i class="fa-solid fa-check-circle"></i> Apply Promo Code
             </button>
           </form>
         </div>
@@ -2630,7 +2624,7 @@
 
         <div class="panel-card">
           <div style="font-size:13px; font-weight:700; margin-bottom:10px;">
-            1. Select Feedback Option 
+            1. Select Feedback Option (6 Options)
           </div>
           <div class="feedback-options-grid" id="feedbackOptionsGrid">
             <div class="feedback-option-card" data-opt="App Bug / Error" onclick="selectFeedbackOption(this, 'App Bug / Error')">
@@ -2661,7 +2655,7 @@
 
           <form id="feedbackForm">
             <div class="form-group">
-              <label>2. Write Your Feedback </label>
+              <label>2. Write Your Feedback (50 to 600 Words)</label>
               <textarea id="feedbackText" rows="7" placeholder="Write between 50 and 600 words. To unlock Submit Application, select 'App Upload Request' and describe your website/app request here..." required></textarea>
               <div class="word-counter-row">
                 <span id="feedbackSelectedLabel">Selected: None</span>
@@ -2689,7 +2683,7 @@
 
         <div class="panel-card">
           <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px;">
-            Choose your preferred theme for OSSIAN PRO.
+            Choose your preferred theme for OSSIAN STORE.
           </p>
           <div class="theme-options">
             <div class="theme-option-card" id="themeLightCard" onclick="setThemeMode('light')">
@@ -2727,7 +2721,7 @@
             </div>
             <div class="info-kv-item">
               <div>
-                <div class="info-kv-label">Main App Loaded</div>
+                <div class="info-kv-label">Admin Tools Loaded</div>
                 <div class="info-kv-val" id="syncToolsCount">0 / 4</div>
               </div>
               <i class="fa-solid fa-toolbox gold-icon"></i>
@@ -2771,7 +2765,7 @@
             <div class="setting-left">
               <span class="gold-badge-icon"><i class="fa-solid fa-vault gold-icon"></i></span>
               <div>
-                <div class="setting-title">High Security</div>
+                <div class="setting-title">Banking Security</div>
                 <div class="setting-sub" id="bankingSecurityRowSub">IP &amp; Device Guard Active • Blackout ON</div>
               </div>
             </div>
@@ -2814,7 +2808,7 @@
             <i class="fa-solid fa-chevron-right row-arrow"></i>
           </div>
 
-          <!-- 5. Creator Earnings & Guide (Exact 5th Position in Settings) -->
+          <!-- 5. Creator Earnings & Guide -->
           <div class="setting-row clickable" onclick="openSettingsEarningsPage()">
             <div class="setting-left">
               <span class="gold-badge-icon"><i class="fa-solid fa-sack-dollar gold-icon"></i></span>
@@ -2868,7 +2862,7 @@
               <span class="gold-badge-icon"><i class="fa-solid fa-file-contract gold-icon"></i></span>
               <div>
                 <div class="setting-title">User Agreement</div>
-                <div class="setting-sub">Terms and conditions of using OSSIAN PRO</div>
+                <div class="setting-sub">Terms and conditions of using OSSIAN STORE</div>
               </div>
             </div>
             <i class="fa-solid fa-chevron-right row-arrow"></i>
@@ -2880,7 +2874,7 @@
               <span class="gold-badge-icon"><i class="fa-solid fa-circle-info gold-icon"></i></span>
               <div>
                 <div class="setting-title">About</div>
-                <div class="setting-sub">About OSSIAN PRO platform</div>
+                <div class="setting-sub">About OSSIAN STORE platform</div>
               </div>
             </div>
             <i class="fa-solid fa-chevron-right row-arrow"></i>
@@ -2908,7 +2902,7 @@
               <i class="fa-solid fa-arrow-left gold-icon"></i>
             </button>
             <span class="gold-badge-icon"><i class="fa-solid fa-vault gold-icon"></i></span>
-            <div class="subpage-title">High Security</div>
+            <div class="subpage-title">Banking Security</div>
           </div>
         </div>
 
@@ -2947,18 +2941,22 @@
 
         <div class="panel-card">
           <div style="font-size:14px; font-weight:800; margin-bottom:10px;">
-            <i class="fa-solid fa-key gold-icon"></i> 4-Digit High Security PIN
+            <i class="fa-solid fa-key gold-icon"></i> 4-Digit Banking Security PIN
           </div>
-          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.5; margin-bottom:14px;">
-            Once saved, your 4-digit High Security PIN is <strong>permanently active</strong>. Entering or pasting this saved PIN is required to open OSSIAN PRO and every website or app until you delete the PIN.
+          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.5; margin-bottom:14px;" id="pinStatusDesc">
+            Once generated, your 4-digit Banking Security PIN stays <strong>permanently active</strong> across sessions and refreshes until you explicitly remove it. Entering or pasting this saved PIN is required to open OSSIAN STORE and every website or app.
           </p>
+          <div id="pinActiveBanner" class="security-notice-bar" style="display:none;">
+            <i class="fa-solid fa-lock gold-icon"></i>
+            <span><strong>Permanent PIN Active:</strong> Your 4-digit PIN cannot be overwritten or removed automatically. Only you can remove it below.</span>
+          </div>
           <form id="setPinForm">
             <div class="form-group">
-              <label>New 4-Digit PIN</label>
+              <label>New 4-Digit Banking PIN</label>
               <input type="password" id="newBankingPin" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Enter 4 digits (e.g. 4829)" required />
             </div>
             <div class="form-group">
-              <label>Confirm 4-Digit PIN</label>
+              <label>Confirm 4-Digit Banking PIN</label>
               <input type="password" id="confirmBankingPin" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Re-enter 4 digits" required />
             </div>
             <button type="submit" class="btn btn-primary">
@@ -2969,8 +2967,8 @@
             <button type="button" class="btn btn-secondary btn-sm" style="width:100%;" onclick="lockAppWithPinNow()">
               <i class="fa-solid fa-lock gold-icon"></i> Lock Now
             </button>
-            <button type="button" class="btn btn-danger btn-sm" style="width:100%;" onclick="removeBankingPin()">
-              <i class="fa-solid fa-trash"></i> Delete PIN
+            <button type="button" class="btn btn-danger btn-sm" id="removePinBtn" style="width:100%;" onclick="handleRemoveBankingPinClick()">
+              <i class="fa-solid fa-trash"></i> Remove PIN
             </button>
           </div>
         </div>
@@ -3003,7 +3001,7 @@
 
         <div class="panel-card">
           <p style="font-size:13px; line-height:1.55; color:var(--text-muted);">
-            When notifications are ON, you will stay informed about official updates, announcements, and new web apps added to OSSIAN PRO. Turn this switch OFF anytime to mute notifications.
+            When notifications are ON, you will stay informed about official updates, announcements, and new web apps added to OSSIAN STORE. Turn this switch OFF anytime to mute notifications.
           </p>
         </div>
       </section>
@@ -3085,56 +3083,7 @@
           <div style="font-size:14.5px; font-weight:800; margin-bottom:12px;">
             <i class="fa-solid fa-book-open gold-icon"></i> Complete System Details &amp; Earning Rules
           </div>
-
-          <div class="earnings-rule-item">
-            <div class="earnings-rule-head">
-              <span><i class="fa-solid fa-cloud-arrow-up gold-icon"></i> 1. Upload Website / App Reward</span>
-              <span class="category-pill">+$0.30 / Upload</span>
-            </div>
-            <div class="earnings-rule-desc">
-              Every time you submit a brand-new, unique website or web application in <strong>Submit Application</strong>, you immediately earn <strong>$0.30</strong> added directly to your OSSIAN PRO Balance. Remember: duplicate websites already uploaded by the company or any user are automatically blocked and cannot be re-submitted.
-            </div>
-          </div>
-
-          <div class="earnings-rule-item">
-            <div class="earnings-rule-head">
-              <span><i class="fa-solid fa-heart gold-icon"></i> 2. User Favorite Reward</span>
-              <span class="category-pill">+$0.80 / Favorite</span>
-            </div>
-            <div class="earnings-rule-desc">
-              Whenever users tap the Heart icon to add your uploaded website to their <strong>Favorite Apps</strong>, you earn <strong>$0.80</strong> per unique user favorite. High-quality and useful websites attract more favorites and grow your dollar balance faster.
-            </div>
-          </div>
-
-          <div class="earnings-rule-item">
-            <div class="earnings-rule-head">
-              <span><i class="fa-solid fa-fire gold-icon"></i> 3. Popular Top 3 Daily Bonus</span>
-              <span class="category-pill">+$2.50 / Day</span>
-            </div>
-            <div class="earnings-rule-desc">
-              When other users (excluding the uploader) open and use your uploaded website enough to push it into the <strong>Popular Top 3 (#1, #2, or #3)</strong>, you earn <strong>$2.50 every day</strong> for as long as your website remains inside the Top 3 Popular rankings.
-            </div>
-          </div>
-
-          <div class="earnings-rule-item">
-            <div class="earnings-rule-head">
-              <span><i class="fa-solid fa-coins gold-icon"></i> 4. Paid Websites &amp; Token Deduction</span>
-              <span class="category-pill">Token Gate</span>
-            </div>
-            <div class="earnings-rule-desc">
-              Websites or apps marked as <strong>Paid</strong> require active <strong>Tokens</strong> in your account. Any tokens used on a paid app/website are deducted immediately from your total tokens and the exact remaining token balance is displayed everywhere. If your balance reaches <strong>0 Tokens</strong> (or fewer tokens than required), paid websites and apps cannot run.
-            </div>
-          </div>
-
-          <div class="earnings-rule-item">
-            <div class="earnings-rule-head">
-              <span><i class="fa-solid fa-key gold-icon"></i> 5. OSSIAN TOK Privacy &amp; Ownership</span>
-              <span class="category-pill">Private Sealed QR</span>
-            </div>
-            <div class="earnings-rule-desc">
-              Both Login QR and OSSIAN TOK QR codes are cryptographically sealed so scanning them in Google or external scanners reveals zero personal user details. Your OSSIAN TOK is strictly locked to your UID and device—another user cannot use your tokens or Token QR in their account—and you can reset your Token QR anytime.
-            </div>
-          </div>
+          <div id="earningsRulesList"></div>
         </div>
       </section>
 
@@ -3173,7 +3122,7 @@
         </div>
 
         <div class="panel-card" id="submitAppFormCard">
-          <div class="security-notice-bar">
+          <div class="security-notice-bar" id="submitAppRewardNotice">
             <i class="fa-solid fa-sack-dollar gold-icon"></i>
             <span>Earn <strong>$0.30</strong> per unique upload, <strong>$0.80</strong> per favorite &amp; <strong>$2.50/day</strong> in Popular Top 3! Duplicate websites are blocked.</span>
           </div>
@@ -3262,7 +3211,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>Notes </label>
+              <label>Notes (Optional)</label>
               <input type="text" id="apptNoteInput" placeholder="Short note..." />
             </div>
             <button type="submit" class="btn btn-primary">
@@ -3291,7 +3240,7 @@
 
         <div class="panel-card" style="padding:12px 14px; margin-bottom:14px;">
           <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
-            <i class="fa-solid fa-shield-halved gold-icon"></i> Submitted websites remain in <strong>Pending</strong> until approved from the Company. Once approved, they progress through all 6 stages.
+            <i class="fa-solid fa-shield-halved gold-icon"></i> Submitted websites remain in <strong>Pending</strong> until approved from the Admin Panel. Once approved, they progress through all 6 stages.
           </p>
         </div>
 
@@ -3312,12 +3261,12 @@
 
         <div class="panel-card legal-box">
           <h4>1. Acceptance &amp; Account Rules</h4>
-          <p>By accessing and operating OSSIAN PRO, you agree to abide by all platform terms, security requirements, and community standards enforced across our network.</p>
+          <p>By accessing and operating OSSIAN STORE, you agree to abide by all platform terms, security requirements, and community standards enforced across our network.</p>
           <h4>2. Single Device &amp; IP Integrity</h4>
           <p>Only one primary Main Account is allowed per mobile device and public IP address. Duplicate accounts created on the same phone or connection are automatically suspended while your original Main Account stays safe.</p>
           <h4>3. Uploads, Rewards &amp; Paid Websites</h4>
-          <p>Creators must receive Admin approval before submitting applications, and re-uploading any existing website is strictly forbidden. Valid uploads earn $0.30, unique favorites earn $0.80, and apps reaching Popular Top 3 through external users earn $2.50 daily. Paid websites require active Tokens for access, and tokens used are immediately deducted from your account balance.</p>
-          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN PRO. All rights reserved.</p>
+          <p id="agreementEarningsSentence">Creators must receive Admin approval before submitting applications, and re-uploading any existing website is strictly forbidden. Valid uploads earn $0.30, unique favorites earn $0.80, and apps reaching Popular Top 3 through external users earn $2.50 daily. Paid websites require active Tokens for access, and tokens used are immediately deducted from your account balance.</p>
+          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN STORE. All rights reserved.</p>
         </div>
       </section>
 
@@ -3335,7 +3284,7 @@
 
         <div class="panel-card legal-box">
           <div class="about-logo-hero">
-            <div class="about-logo-badge" id="aboutPageLogo" aria-label="OSSIAN PRO Official Logo">
+            <div class="about-logo-badge" id="aboutPageLogo" aria-label="OSSIAN STORE Official Logo">
               <svg viewBox="0 0 64 64" fill="none">
                 <defs>
                   <linearGradient id="ossianGoldAbout" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
@@ -3349,15 +3298,15 @@
                 <circle cx="32" cy="32" r="7" fill="url(#ossianGoldAbout)"/>
               </svg>
             </div>
-            <div style="font-size:19px; font-weight:900; letter-spacing:0.4px; color:#fde047;">OSSIAN PRO</div>
-            <div style="font-size:12px; color:#cbd5e1; margin-top:2px;">Next-Generation Web Apps Launcher &bull; Version 3.6</div>
+            <div style="font-size:19px; font-weight:900; letter-spacing:0.4px; color:#fde047;">OSSIAN STORE</div>
+            <div style="font-size:12px; color:#cbd5e1; margin-top:2px;">Next-Generation Web Apps Launcher &bull; Version 3.7</div>
           </div>
 
           <h4>Our Platform Vision</h4>
-          <p>OSSIAN PRO is a next-generation, banking-grade Web Apps Launcher built to organize, discover, and launch official, favorite, and trending web applications from one streamlined mobile dashboard.</p>
+          <p>OSSIAN STORE is a next-generation, banking-grade Web Apps Launcher built to organize, discover, and launch official, favorite, and trending web applications from one streamlined mobile dashboard.</p>
           <h4>Core Capabilities &amp; Innovation</h4>
           <p>Our ecosystem features Admin-managed Pro Tools, Web Official Apps, Popular Top 3 leaderboards, Personal Favorites, and Quick Launch shortcuts engineered for speed and everyday convenience. Registered members receive 5,000 starter tokens, personal invite codes, and access to the OSSIAN TOK vault for private sealed QR credentials paired with weekly rotating six-digit passcodes. Creators earn dollar rewards for unique uploads, community favorites, and Popular Top 3 retention, supported by live cloud sync and auto-updating PWA installation.</p>
-          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN PRO. All rights reserved.</p>
+          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN STORE. All rights reserved.</p>
         </div>
       </section>
 
@@ -3375,16 +3324,16 @@
 
         <div class="panel-card legal-box">
           <h4>1. Data Collection &amp; Storage</h4>
-          <p>OSSIAN PRO respects your digital privacy and safeguards every piece of account information stored across our cloud infrastructure. During registration, we record your Name, Email, permanent UID, Invite Code, Balance, Token count, Device Identifier, Hardware Fingerprint, and Public IP Address strictly for authentication, fraud prevention, and multi-account enforcement.</p>
+          <p>OSSIAN STORE respects your digital privacy and safeguards every piece of account information stored across our cloud infrastructure. During registration, we record your Name, Email, permanent UID, Invite Code, Balance, Token count, Device Identifier, Hardware Fingerprint, and Public IP Address strictly for authentication, fraud prevention, and multi-account enforcement.</p>
           <h4>2. Cryptographic &amp; QR Privacy Protection</h4>
           <p>Your passwords and Banking Security PINs are protected using salted SHA-256 cryptographic hashing, while all Login QR and OSSIAN TOK QR codes are sealed into unreadable encrypted tokens so third-party scanners like Google cannot extract any personal details. OSSIAN TOK credentials are bound strictly to your own UID and device so other users cannot redeem or spend your tokens. Our anti-capture blackout shield blocks unauthorized screenshots and screen recording, and copied credentials clear from your clipboard after thirty seconds.</p>
-          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN PRO. All rights reserved.</p>
+          <p style="margin-top:12px; font-weight:700;">Copyright &copy; 2026 OSSIAN STORE. All rights reserved.</p>
         </div>
       </section>
 
       <!-- Global Copyright Footer -->
       <footer class="site-copyright">
-        Copyright &copy; 2026 OSSIAN PRO. All rights reserved.
+        Copyright &copy; 2026 OSSIAN STORE. All rights reserved.
       </footer>
 
     </main>
@@ -3408,7 +3357,7 @@
     </nav>
   </div>
 
-  <!-- App / Tool Preview Modal -->
+  <!-- App / Tool Preview Modal (URL Hidden) -->
   <div class="modal-overlay" id="appModal" onclick="closeModalOnOverlay(event, 'appModal')">
     <div class="modal-sheet">
       <div class="sheet-handle"></div>
@@ -3420,7 +3369,6 @@
             <span class="category-pill" id="modalAppCat"></span>
             <span class="paid-pill" id="modalPaidBadge" style="display:none;"><i class="fa-solid fa-coins"></i> Paid</span>
           </div>
-          <div class="sheet-url" id="modalAppUrl"></div>
         </div>
       </div>
       <div class="lock-timer-box" id="modalTokenErrorBox">
@@ -3429,14 +3377,11 @@
       </div>
       <div class="sheet-desc" id="modalAppDesc"></div>
       <div class="sheet-buttons">
-        <a id="modalLaunchLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="text-decoration:none;">
+        <button type="button" id="modalLaunchBtn" class="btn btn-primary">
           <i class="fa-solid fa-rocket"></i> Open Website App
-        </a>
-        <button class="btn btn-secondary btn-sm" id="modalFavBtn" style="padding:0 14px;" onclick="toggleCurrentModalFav()" title="Favorite">
-          <i class="fa-regular fa-heart gold-icon"></i>
         </button>
-        <button class="btn btn-secondary btn-sm" style="padding:0 14px;" onclick="copyModalLink()" title="Copy Link">
-          <i class="fa-solid fa-copy gold-icon"></i>
+        <button type="button" class="btn btn-secondary btn-sm" id="modalFavBtn" style="padding:0 16px;" onclick="toggleCurrentModalFav()" title="Favorite">
+          <i class="fa-regular fa-heart gold-icon"></i>
         </button>
       </div>
     </div>
@@ -3457,11 +3402,11 @@
       </div>
       <div class="lock-timer-box" id="appPinLockTimerBox">
         <i class="fa-solid fa-clock"></i>
-        <span id="appPinLockTimerText"> Try again in 120 seconds.</span>
+        <span id="appPinLockTimerText">3 wrong PIN attempts! Please wait 120 seconds.</span>
       </div>
       <form id="appPinVerifyForm">
         <div class="form-group">
-          <label>Saved 4-Digit Security PIN</label>
+          <label>Saved 4-Digit Banking Security PIN</label>
           <div class="pin-input-row">
             <input type="password" id="appPinInput" inputmode="numeric" maxlength="4" pattern="\d{4}" placeholder="Enter or paste 4-digit PIN" style="text-align:center; letter-spacing:8px; font-size:18px; font-weight:800;" required />
             <button type="button" class="btn btn-secondary btn-sm" onclick="pastePinInto('appPinInput')" style="height:46px;">
@@ -3488,8 +3433,8 @@
           <i class="fa-solid fa-mobile-screen-button gold-icon"></i>
         </span>
         <div style="flex:1; min-width:0;">
-          <h3 style="font-size:17px; font-weight:800;">Direct Download — OSSIAN PRO App</h3>
-          <div style="font-size:12px; color:var(--text-muted);" id="pwaModalSubtitle"> Mobile App • Auto-Updates with Website</div>
+          <h3 style="font-size:17px; font-weight:800;">Direct Download — OSSIAN STORE App</h3>
+          <div style="font-size:12px; color:var(--text-muted);" id="pwaModalSubtitle">PWA Mobile App • Auto-Updates with Website</div>
         </div>
       </div>
 
@@ -3497,7 +3442,7 @@
         <div class="pwa-progress-fill" id="pwaProgressBar"></div>
       </div>
       <div id="pwaStatusMsg" style="font-size:13px; font-weight:700; margin-bottom:12px; color:var(--primary);">
-        Preparing OSSIAN PRO ...
+        Preparing OSSIAN STORE PWA...
       </div>
 
       <div id="pwaManualFallbackBox" class="sheet-desc" style="display:none; margin-bottom:14px;"></div>
@@ -3523,6 +3468,8 @@
       const SETTINGS_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/settings";
       const CONFIG_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/config";
       const BRANDING_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/branding";
+      const EARNINGS_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/earnings";
+      const PRICING_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/pricing";
       const MESSAGES_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/messages";
       const USERS_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/users";
       const PROMO_URL = "https://firestore.googleapis.com/v1/projects/" + PROJECT_ID + "/databases/(default)/documents/promocodes";
@@ -3533,15 +3480,19 @@
       const MAX_REG_PER_HOUR = 40;
       const HOUR_MS = 3600000;
       const DAY_MS = 24 * 3600 * 1000;
+      const RECENT_TTL_MS = 72 * 3600 * 1000; // 72 Hours retention for Recently Opened
       const WEEK_MS = 7 * 24 * 3600 * 1000;
       const LOCK_DURATION_MS = 60000;
       const QR_LOCK_DURATION_MS = 120000;
       const LAUNCH_TIMER_MS = 24 * 3600 * 1000;
       const REGISTER_FREE_TOKENS = 5000;
-      const UPLOAD_REWARD_USD = 0.30;
-      const FAVORITE_REWARD_USD = 0.80;
-      const TOP3_DAILY_REWARD_USD = 2.50;
-      const SESSION_SECRET_KEY = "OSSIAN_PRO_BANK_SEC_V3";
+      const SESSION_SECRET_KEY = "OSSIAN_STORE_BANK_SEC_V3";
+
+      // Dynamic Admin-controlled Settings & Pricing
+      let showBalanceOnSite = true;
+      let uploadRewardUsd = 0.30;
+      let favoriteRewardUsd = 0.80;
+      let top3DailyRewardUsd = 2.50;
 
       let apps = [];
       let adminTools = [];
@@ -3557,7 +3508,7 @@
       let creatorStatsMap = {};
       let messagesLoaded = false;
       let dbStatusMessage = "Connecting...";
-      let recentIds = [];
+      let recentItems = []; // Array of { id, openedAt }
       let favIds = [];
       let usageMap = {};
       let registeredUsers = [];
@@ -3582,6 +3533,8 @@
       let bankingPinHash = "";
       let pinFailCount = 0;
       let pinLockUntil = 0;
+      let removePinConfirmPending = false;
+      let removePinConfirmTimer = null;
       let clipboardClearTimer = null;
       let blackoutReleaseTimer = null;
       let pendingLaunchTarget = null;
@@ -3594,7 +3547,6 @@
       let showAccountPassword = false;
       let isLoaded = false;
       let activeCategory = "All";
-      let currentModalUrl = "";
       let currentModalId = "";
 
       let loginFailCount = 0;
@@ -3644,6 +3596,231 @@
       }
 
       /* =======================================================
+         RECENTLY OPENED (72 HOURS AUTO-EXPIRATION)
+         ======================================================= */
+      function normalizeAndPruneRecentItems(rawArr) {
+        var now = Date.now();
+        var seen = {};
+        var cleaned = [];
+        if (!Array.isArray(rawArr)) return [];
+
+        for (var i = 0; i < rawArr.length; i++) {
+          var entry = rawArr[i];
+          var id = "";
+          var openedAt = 0;
+          if (typeof entry === "string") {
+            id = entry;
+            openedAt = now;
+          } else if (entry && typeof entry === "object" && entry.id) {
+            id = String(entry.id);
+            openedAt = Number(entry.openedAt || 0);
+          }
+          if (!id || seen[id]) continue;
+          if ((now - openedAt) < RECENT_TTL_MS) {
+            seen[id] = true;
+            cleaned.push({ id: id, openedAt: openedAt });
+          }
+        }
+        cleaned.sort(function (a, b) { return b.openedAt - a.openedAt; });
+        return cleaned;
+      }
+
+      function pruneAndSaveRecentItems() {
+        var beforeLen = recentItems.length;
+        recentItems = normalizeAndPruneRecentItems(recentItems);
+        if (recentItems.length !== beforeLen) {
+          safeSet("ossian_recent_v1", JSON.stringify(recentItems));
+        }
+        return recentItems;
+      }
+
+      /* =======================================================
+         ADMIN PANEL BALANCE VISIBILITY & EARNINGS PRICES SYNC
+         ======================================================= */
+      function parseBoolField(field) {
+        if (!field || typeof field !== "object") return null;
+        if (typeof field.booleanValue === "boolean") return field.booleanValue;
+        if (typeof field.stringValue === "string") {
+          var s = field.stringValue.trim().toLowerCase();
+          if (s === "off" || s === "false" || s === "no" || s === "hide" || s === "hidden" || s === "disabled" || s === "0") return false;
+          if (s === "on" || s === "true" || s === "yes" || s === "show" || s === "visible" || s === "enabled" || s === "1") return true;
+        }
+        if (field.integerValue !== undefined) {
+          return Number(field.integerValue) !== 0;
+        }
+        return null;
+      }
+
+      function parseNumericField(field) {
+        if (!field || typeof field !== "object") return null;
+        var val = null;
+        if (typeof field.doubleValue === "number") val = field.doubleValue;
+        else if (typeof field.integerValue === "number" || typeof field.integerValue === "string") val = Number(field.integerValue);
+        else if (typeof field.stringValue === "string") {
+          var cleaned = field.stringValue.replace(/[^0-9.-]/g, "");
+          if (cleaned) val = parseFloat(cleaned);
+        }
+        if (val !== null && !isNaN(val) && isFinite(val) && val >= 0) {
+          return roundUsd(val);
+        }
+        return null;
+      }
+
+      function extractBalanceToggleFromFields(f) {
+        if (!f) return null;
+        var hideKeys = ["hideBalance", "hide_balance", "disableBalance", "balanceOff", "balance_off"];
+        for (var h = 0; h < hideKeys.length; h++) {
+          if (f[hideKeys[h]]) {
+            var hv = parseBoolField(f[hideKeys[h]]);
+            if (hv !== null) return !hv;
+          }
+        }
+        var showKeys = [
+          "showBalance", "show_balance", "balanceEnabled", "balance_enabled",
+          "enableBalance", "enable_balance", "displayBalance", "display_balance",
+          "isBalanceVisible", "balanceVisible", "balance_visible", "balanceOn",
+          "balance_on", "balanceStatus", "balance_status", "balanceMode", "balanceVisibility"
+        ];
+        for (var i = 0; i < showKeys.length; i++) {
+          if (f[showKeys[i]]) {
+            var sv = parseBoolField(f[showKeys[i]]);
+            if (sv !== null) return sv;
+          }
+        }
+        if (f.balance && (typeof f.balance.booleanValue === "boolean" || typeof f.balance.stringValue === "string")) {
+          var bv = parseBoolField(f.balance);
+          if (bv !== null) return bv;
+        }
+        return null;
+      }
+
+      function extractFirstNumberFromFields(f, keys) {
+        if (!f) return null;
+        for (var i = 0; i < keys.length; i++) {
+          if (f[keys[i]]) {
+            var num = parseNumericField(f[keys[i]]);
+            if (num !== null) return num;
+          }
+        }
+        return null;
+      }
+
+      function applyBalanceVisibilityUI() {
+        var heroBalPill = document.getElementById("heroBalancePill");
+        var meBalPill = document.getElementById("meBalancePill");
+        var accSub = document.getElementById("accountInfoRowSub");
+
+        if (heroBalPill) heroBalPill.style.display = showBalanceOnSite ? "inline-flex" : "none";
+        if (meBalPill) meBalPill.style.display = showBalanceOnSite ? "inline-flex" : "none";
+        if (accSub) {
+          accSub.textContent = showBalanceOnSite
+            ? "Name, Balance, Tokens, UID, IP & Invite Code"
+            : "Name, Tokens, UID, IP & Invite Code";
+        }
+
+        if (document.getElementById("page-me-account").classList.contains("active")) {
+          renderAccountInfoBody();
+        }
+        if (document.getElementById("page-settings-earnings").classList.contains("active")) {
+          renderEarningsDashboard();
+        }
+        updateSettingsRowSummaries();
+      }
+
+      function applyDynamicEarningsUI() {
+        var upStr = formatUsd(uploadRewardUsd);
+        var favStr = formatUsd(favoriteRewardUsd);
+        var topStr = formatUsd(top3DailyRewardUsd);
+
+        var earnSub = document.getElementById("earningsRowSub");
+        if (earnSub) {
+          earnSub.textContent = (showBalanceOnSite && currentUser)
+            ? "Balance: " + formatUsd(currentUser.balance || 0) + " • " + upStr + " / " + favStr + " / " + topStr
+            : upStr + " Upload • " + favStr + " Fav • " + topStr + "/day Top 3";
+        }
+
+        var noticeEl = document.getElementById("submitAppRewardNotice");
+        if (noticeEl) {
+          noticeEl.innerHTML =
+            '<i class="fa-solid fa-sack-dollar gold-icon"></i>' +
+            '<span>Earn <strong>' + upStr + '</strong> per unique upload, <strong>' + favStr + '</strong> per favorite &amp; <strong>' + topStr + '/day</strong> in Popular Top 3! Duplicate websites are blocked.</span>';
+        }
+
+        var subBtn = document.getElementById("submitAppBtn");
+        if (subBtn) {
+          subBtn.innerHTML = '<i class="fa-solid fa-check"></i> Submit Application (+' + upStr + ')';
+        }
+
+        var agreeEl = document.getElementById("agreementEarningsSentence");
+        if (agreeEl) {
+          agreeEl.textContent =
+            "Creators must receive Admin approval before submitting applications, and re-uploading any existing website is strictly forbidden. Valid uploads earn " +
+            upStr + ", unique favorites earn " + favStr + ", and apps reaching Popular Top 3 through external users earn " + topStr +
+            " daily. Paid websites require active Tokens for access, and tokens used are immediately deducted from your account balance.";
+        }
+
+        renderEarningsRulesList();
+        if (document.getElementById("page-settings-earnings").classList.contains("active")) {
+          renderEarningsDashboard();
+        }
+      }
+
+      function renderEarningsRulesList() {
+        var listEl = document.getElementById("earningsRulesList");
+        if (!listEl) return;
+        var upStr = formatUsd(uploadRewardUsd);
+        var favStr = formatUsd(favoriteRewardUsd);
+        var topStr = formatUsd(top3DailyRewardUsd);
+
+        listEl.innerHTML =
+          '<div class="earnings-rule-item">' +
+            '<div class="earnings-rule-head">' +
+              '<span><i class="fa-solid fa-cloud-arrow-up gold-icon"></i> 1. Upload Website / App Reward</span>' +
+              '<span class="category-pill">+' + upStr + ' / Upload</span>' +
+            '</div>' +
+            '<div class="earnings-rule-desc">' +
+              'Every time you submit a brand-new, unique website or web application in <strong>Submit Application</strong>, you immediately earn <strong>' + upStr + '</strong> added directly to your OSSIAN STORE Balance. Remember: duplicate websites already uploaded by the company or any user are automatically blocked and cannot be re-submitted.' +
+            '</div>' +
+          '</div>' +
+          '<div class="earnings-rule-item">' +
+            '<div class="earnings-rule-head">' +
+              '<span><i class="fa-solid fa-heart gold-icon"></i> 2. User Favorite Reward</span>' +
+              '<span class="category-pill">+' + favStr + ' / Favorite</span>' +
+            '</div>' +
+            '<div class="earnings-rule-desc">' +
+              'Whenever users tap the Heart icon to add your uploaded website to their <strong>Favorite Apps</strong>, you earn <strong>' + favStr + '</strong> per unique user favorite. High-quality and useful websites attract more favorites and grow your dollar balance faster.' +
+            '</div>' +
+          '</div>' +
+          '<div class="earnings-rule-item">' +
+            '<div class="earnings-rule-head">' +
+              '<span><i class="fa-solid fa-fire gold-icon"></i> 3. Popular Top 3 Daily Bonus</span>' +
+              '<span class="category-pill">+' + topStr + ' / Day</span>' +
+            '</div>' +
+            '<div class="earnings-rule-desc">' +
+              'When other users (excluding the uploader) open and use your uploaded website enough to push it into the <strong>Popular Top 3 (#1, #2, or #3)</strong>, you earn <strong>' + topStr + ' every day</strong> for as long as your website remains inside the Top 3 Popular rankings.' +
+            '</div>' +
+          '</div>' +
+          '<div class="earnings-rule-item">' +
+            '<div class="earnings-rule-head">' +
+              '<span><i class="fa-solid fa-coins gold-icon"></i> 4. Paid Websites &amp; Token Deduction</span>' +
+              '<span class="category-pill">Token Gate</span>' +
+            '</div>' +
+            '<div class="earnings-rule-desc">' +
+              'Websites or apps marked as <strong>Paid</strong> require active <strong>Tokens</strong> in your account. Any tokens used on a paid app/website are deducted immediately from your total tokens and the exact remaining token balance is displayed everywhere. If your balance reaches <strong>0 Tokens</strong> (or fewer tokens than required), paid websites and apps cannot run.' +
+            '</div>' +
+          '</div>' +
+          '<div class="earnings-rule-item">' +
+            '<div class="earnings-rule-head">' +
+              '<span><i class="fa-solid fa-key gold-icon"></i> 5. OSSIAN TOK Privacy &amp; Ownership</span>' +
+              '<span class="category-pill">Private Sealed QR</span>' +
+            '</div>' +
+            '<div class="earnings-rule-desc">' +
+              'Both Login QR and OSSIAN TOK QR codes are cryptographically sealed so scanning them in Google or external scanners reveals zero personal user details. Your OSSIAN TOK is strictly locked to your UID and device—another user cannot use your tokens or Token QR in their account—and you can reset your Token QR anytime.' +
+            '</div>' +
+          '</div>';
+      }
+
+      /* =======================================================
          ADMIN PANEL WEBSITE ICON (HOME + ME + ABOUT + FAVICON)
          ======================================================= */
       function getDefaultLogoSvgHtml(gradId, sizePx) {
@@ -3674,7 +3851,7 @@
           return;
         }
         if (isSafeImageSrc(clean)) {
-          el.innerHTML = '<img src="' + escapeHtml(clean) + '" alt="OSSIAN PRO" onerror="window.restoreSingleSiteLogo(this, \'' + gradId + '\', ' + svgSizePx + ')" />';
+          el.innerHTML = '<img src="' + escapeHtml(clean) + '" alt="OSSIAN STORE" onerror="window.restoreSingleSiteLogo(this, \'' + gradId + '\', ' + svgSizePx + ')" />';
           return;
         }
         if (/^(fa-[a-z0-9-]+|fa-solid\s+fa-[a-z0-9-]+|fa-regular\s+fa-[a-z0-9-]+|fa-brands\s+fa-[a-z0-9-]+)$/i.test(clean)) {
@@ -3695,14 +3872,10 @@
         siteWebsiteIcon = String(iconVal || "").trim();
         safeSet("ossian_site_icon_v1", siteWebsiteIcon);
 
-        // 1. Home Page Top Header Logo
         renderLogoIntoElement(document.getElementById("headerBrandLogo"), siteWebsiteIcon, "ossianGold", 24, 20);
-        // 2. Me Page Profile Logo
         renderLogoIntoElement(document.getElementById("meProfileLogo"), siteWebsiteIcon, "ossianGoldMe", 34, 26);
-        // 3. About Page Logo
         renderLogoIntoElement(document.getElementById("aboutPageLogo"), siteWebsiteIcon, "ossianGoldAbout", 44, 34);
 
-        // Also update browser tab favicon when URL/data image is provided
         var favEl = document.getElementById("siteFaviconLink");
         if (favEl) {
           if (isSafeImageSrc(siteWebsiteIcon)) {
@@ -3738,39 +3911,68 @@
         var isSiteLogoBool = f.isSiteLogo && f.isSiteLogo.booleanValue === true;
         return isSiteLogoBool ||
                docId === "site_icon" || docId === "website_icon" || docId === "site_logo" || docId === "branding" || docId === "site_settings" ||
-               typeVal === "site_icon" || typeVal === "website_icon" || typeVal === "site_logo" || typeVal === "branding";
+               docId === "earnings" || docId === "pricing" || docId === "creator_earnings" || docId === "balance_settings" ||
+               typeVal === "site_icon" || typeVal === "website_icon" || typeVal === "site_logo" || typeVal === "branding" ||
+               typeVal === "settings" || typeVal === "config" || typeVal === "earnings" || typeVal === "pricing";
       }
 
-      async function fetchSiteBrandingSilently(extraDocs) {
+      async function fetchAdminConfigAndBrandingSilently(extraDocs) {
         var foundIcon = "";
-        var priorityIds = ["branding", "site", "website", "site_icon", "website_icon", "general", "app", "config", "logo"];
+        var foundBalanceToggle = null;
+        var foundUploadPrice = null;
+        var foundFavPrice = null;
+        var foundTop3Price = null;
+
+        var priorityIds = [
+          "settings", "general", "config", "branding", "site", "website",
+          "earnings", "pricing", "rewards", "creator_earnings", "balance",
+          "site_icon", "website_icon", "app", "logo"
+        ];
+
+        var uploadKeys = [
+          "uploadReward", "uploadPrice", "uploadEarning", "upload_reward",
+          "upload_price", "upload_earning", "appUploadReward", "submitReward",
+          "submitAppReward", "uploadUsd", "uploadAmount"
+        ];
+        var favKeys = [
+          "favoriteReward", "favReward", "favoritePrice", "favPrice",
+          "favoriteEarning", "favorite_reward", "fav_reward", "favorite_price",
+          "userFavoriteReward", "favoriteUsd", "favUsd"
+        ];
+        var top3Keys = [
+          "top3Reward", "top3DailyReward", "top3Price", "popularTop3Reward",
+          "popularReward", "top3_reward", "top3_daily_reward", "top3_price",
+          "dailyTop3Reward", "top3Usd", "dailyBonus"
+        ];
 
         try {
           var responses = await Promise.all([
             fetch(SETTINGS_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; }),
             fetch(CONFIG_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; }),
-            fetch(BRANDING_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; })
+            fetch(BRANDING_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; }),
+            fetch(EARNINGS_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; }),
+            fetch(PRICING_URL + "?pageSize=30&key=" + encodeURIComponent(API_KEY), { cache: "no-store" }).catch(function () { return null; })
           ]);
 
-          var allBrandingDocs = [];
+          var allDocs = [];
           for (var i = 0; i < responses.length; i++) {
             var res = responses[i];
             if (res && res.ok) {
               var data = await res.json().catch(function () { return null; });
               if (data && Array.isArray(data.documents)) {
-                allBrandingDocs = allBrandingDocs.concat(data.documents);
+                allDocs = allDocs.concat(data.documents);
               }
             }
           }
 
           if (Array.isArray(extraDocs)) {
             extraDocs.forEach(function (d) {
-              if (isSiteMetaDocument(d)) allBrandingDocs.push(d);
+              if (isSiteMetaDocument(d)) allDocs.push(d);
             });
           }
 
-          if (allBrandingDocs.length > 0) {
-            allBrandingDocs.sort(function (a, b) {
+          if (allDocs.length > 0) {
+            allDocs.sort(function (a, b) {
               var idA = String((a.name || "").split("/").pop() || "").toLowerCase();
               var idB = String((b.name || "").split("/").pop() || "").toLowerCase();
               var pA = priorityIds.indexOf(idA);
@@ -3782,31 +3984,61 @@
               return tB - tA;
             });
 
-            for (var j = 0; j < allBrandingDocs.length; j++) {
-              var candidate = extractSiteIconFromFields(allBrandingDocs[j].fields);
-              if (candidate) {
-                foundIcon = candidate;
-                break;
+            for (var j = 0; j < allDocs.length; j++) {
+              var fields = allDocs[j].fields || {};
+              if (!foundIcon) {
+                var cIcon = extractSiteIconFromFields(fields);
+                if (cIcon) foundIcon = cIcon;
+              }
+              if (foundBalanceToggle === null) {
+                var bt = extractBalanceToggleFromFields(fields);
+                if (bt !== null) foundBalanceToggle = bt;
+              }
+              if (foundUploadPrice === null) {
+                foundUploadPrice = extractFirstNumberFromFields(fields, uploadKeys);
+              }
+              if (foundFavPrice === null) {
+                foundFavPrice = extractFirstNumberFromFields(fields, favKeys);
+              }
+              if (foundTop3Price === null) {
+                foundTop3Price = extractFirstNumberFromFields(fields, top3Keys);
               }
             }
+
             if (foundIcon !== siteWebsiteIcon) {
               applySiteWebsiteIcon(foundIcon);
             } else if (!foundIcon && siteWebsiteIcon) {
-              // Admin cleared the custom icon in settings
               applySiteWebsiteIcon("");
             }
-          } else if (Array.isArray(extraDocs)) {
-            for (var k = 0; k < extraDocs.length; k++) {
-              if (isSiteMetaDocument(extraDocs[k])) {
-                var c = extractSiteIconFromFields(extraDocs[k].fields);
-                if (c) {
-                  foundIcon = c;
-                  break;
-                }
-              }
-            }
-            if (foundIcon) applySiteWebsiteIcon(foundIcon);
           }
+
+          if (foundBalanceToggle !== null) {
+            showBalanceOnSite = foundBalanceToggle;
+            safeSet("ossian_show_balance_v1", showBalanceOnSite ? "on" : "off");
+          }
+          applyBalanceVisibilityUI();
+
+          var priceChanged = false;
+          if (foundUploadPrice !== null && foundUploadPrice !== uploadRewardUsd) {
+            uploadRewardUsd = foundUploadPrice;
+            priceChanged = true;
+          }
+          if (foundFavPrice !== null && foundFavPrice !== favoriteRewardUsd) {
+            favoriteRewardUsd = foundFavPrice;
+            priceChanged = true;
+          }
+          if (foundTop3Price !== null && foundTop3Price !== top3DailyRewardUsd) {
+            top3DailyRewardUsd = foundTop3Price;
+            priceChanged = true;
+          }
+          if (priceChanged) {
+            safeSet("ossian_earning_prices_v1", JSON.stringify({
+              upload: uploadRewardUsd,
+              favorite: favoriteRewardUsd,
+              top3: top3DailyRewardUsd
+            }));
+          }
+          applyDynamicEarningsUI();
         } catch (e) {}
       }
 
@@ -4018,7 +4250,7 @@
             ctx.fillStyle = "#f59e0b";
             ctx.fillRect(0, 0, 60, 20);
             ctx.fillStyle = "#0f172a";
-            ctx.fillText("OSSIAN_PRO_FP_2026", 4, 4);
+            ctx.fillText("OSSIAN_STORE_FP_2026", 4, 4);
             parts.push(c.toDataURL().slice(-64));
           } catch (e) {}
           return hashSecret(parts.join("|"));
@@ -4076,6 +4308,17 @@
         var localDevId = safeGet("ossian_device_id_v1", "");
         var idbDevId = await idbGetMeta("device_id");
         idbMainUidCache = await idbGetMeta("main_uid");
+
+        // Restore permanent 4-digit Banking PIN from IndexedDB if localStorage was cleared
+        var idbPinHash = await idbGetMeta("banking_pin_hash");
+        if (idbPinHash && !bankingPinHash) {
+          bankingPinHash = idbPinHash;
+          safeSet("ossian_banking_pin_v1", bankingPinHash);
+          updateBankingSecurityUI();
+          openPinLockOverlay();
+        } else if (bankingPinHash && !idbPinHash) {
+          await idbSetMeta("banking_pin_hash", bankingPinHash);
+        }
 
         if (idbDevId) {
           currentDeviceId = idbDevId;
@@ -4216,7 +4459,7 @@
         if (showUpdateToast) {
           if (currentUser.tokens !== prevTokens) {
             showToast("Remaining Tokens: " + formatNumber(currentUser.tokens));
-          } else if (currentUser.balance !== prevBal) {
+          } else if (showBalanceOnSite && currentUser.balance !== prevBal) {
             showToast("Balance updated: " + formatUsd(currentUser.balance));
           } else {
             showToast("Wallet synced! " + formatNumber(currentUser.tokens) + " Tokens remaining.");
@@ -4496,7 +4739,7 @@
       }
 
       /* =======================================================
-         OSSIAN TOK VAULT (Private Sealed QR + Reset + Weekly Password + Anti-Cross-User)
+         OSSIAN TOK VAULT
          ======================================================= */
       function getTokVaultMap() {
         try { return JSON.parse(safeGet("ossian_tok_vault_v1", "{}")) || {}; } catch (e) { return {}; }
@@ -4505,7 +4748,6 @@
       function saveTokVaultRecord(uid, rec) {
         if (!uid) return;
         var map = getTokVaultMap();
-        // Strictly bind ownerUid & deviceId so another user cannot reuse this local vault record
         rec.ownerUid = uid;
         rec.boundDeviceId = currentDeviceId;
         map[uid] = rec;
@@ -4541,7 +4783,6 @@
         var map = getTokVaultMap();
         var rec = map[user.uid];
 
-        // Strictly verify ownerUid matches user.uid before loading from vault
         if (!user.tokGenerated && rec && rec.tokGenerated && (!rec.ownerUid || rec.ownerUid === user.uid)) {
           user.tokGenerated = true;
           user.tokQrId = rec.tokQrId;
@@ -4768,7 +5009,6 @@
           return;
         }
 
-        // Encrypted opaque payload: zero plaintext name/email/uid/invite/tokens visible if scanned in Google
         var deterministicNonce = hashSecret("OTK_NONCE::" + currentUser.tokQrId).slice(0, 12);
         var sealedPayload = sealQrPayload("OTK1", {
           u: currentUser.uid,
@@ -4805,7 +5045,6 @@
           }
         }
 
-        // Center Badge with "OSSIAN TOK"
         var badgeW = 96;
         var badgeH = 28;
         var bx = (size - badgeW) / 2;
@@ -4861,7 +5100,6 @@
           currentUser.tokPassword = generate6DigitPassword();
           currentUser.tokPasswordUpdatedAt = Date.now();
         }
-
         saveTokVaultRecord(currentUser.uid, {
           tokGenerated: true,
           tokQrId: currentUser.tokQrId,
@@ -4920,7 +5158,6 @@
               showToast("Invalid OSSIAN TOK QR code!");
               return;
             }
-            // Strict cross-user block: another user's Token QR cannot be used in this account
             if (unsealed.data.u !== currentUser.uid) {
               showToast("Access Denied! Another user's Token QR cannot be used in your account.");
               return;
@@ -4950,7 +5187,7 @@
       });
 
       /* =======================================================
-         CREATOR EARNINGS ENGINE ($0.30 Upload, $0.80 Fav, $2.50/day Popular Top 3)
+         CREATOR EARNINGS ENGINE (DYNAMIC ADMIN PRICES)
          ======================================================= */
       function getCreatorStatsForUid(uid) {
         var map = creatorStatsMap || {};
@@ -4982,14 +5219,6 @@
           });
       }
 
-      function getPopularRankForApp(appId) {
-        var ranked = getPopularRankedApps();
-        for (var i = 0; i < Math.min(3, ranked.length); i++) {
-          if (ranked[i].id === appId) return i + 1;
-        }
-        return 0;
-      }
-
       function checkAndCreditPopularTop3DailyRewards() {
         if (!currentUser || !currentUser.uid || currentUser.suspended) return;
         var rankedTop3 = getPopularRankedApps().slice(0, 3);
@@ -5010,12 +5239,12 @@
           var lastAt = Number(stats.top3LastCheckMap[app.id] || 0);
           if (!lastAt) {
             stats.top3LastCheckMap[app.id] = now;
-            earnedNow = roundUsd(earnedNow + TOP3_DAILY_REWARD_USD);
+            earnedNow = roundUsd(earnedNow + top3DailyRewardUsd);
           } else {
             var daysElapsed = Math.floor((now - lastAt) / DAY_MS);
             if (daysElapsed >= 1) {
               stats.top3LastCheckMap[app.id] = lastAt + (daysElapsed * DAY_MS);
-              earnedNow = roundUsd(earnedNow + (daysElapsed * TOP3_DAILY_REWARD_USD));
+              earnedNow = roundUsd(earnedNow + (daysElapsed * top3DailyRewardUsd));
             }
           }
         });
@@ -5028,7 +5257,9 @@
           saveCurrentUserSession(currentUser);
           patchUserBalanceAndTokensInCloud(currentUser.uid, currentUser.balance, currentUser.tokens);
           updateMeAccountUI();
-          showToast("Popular Top 3 Bonus: +" + formatUsd(earnedNow) + " added to Balance!");
+          if (showBalanceOnSite) {
+            showToast("Popular Top 3 Bonus: +" + formatUsd(earnedNow) + " added to Balance!");
+          }
         }
       }
 
@@ -5051,11 +5282,11 @@
         if (!uploaderUid) return;
 
         var stats = getCreatorStatsForUid(uploaderUid);
-        stats.favoriteEarnings = roundUsd((stats.favoriteEarnings || 0) + FAVORITE_REWARD_USD);
+        stats.favoriteEarnings = roundUsd((stats.favoriteEarnings || 0) + favoriteRewardUsd);
         saveCreatorStatsMap();
 
         if (uploaderUid === currentUser.uid) {
-          currentUser.balance = roundUsd((currentUser.balance || 0) + FAVORITE_REWARD_USD);
+          currentUser.balance = roundUsd((currentUser.balance || 0) + favoriteRewardUsd);
           saveOrUpdateLocalUser(currentUser);
           saveCurrentUserSession(currentUser);
           await patchUserBalanceAndTokensInCloud(currentUser.uid, currentUser.balance, currentUser.tokens);
@@ -5063,7 +5294,7 @@
         } else {
           var targetUser = await fetchCloudUserByUidSilently(uploaderUid);
           if (targetUser) {
-            var newBal = roundUsd((targetUser.balance || 0) + FAVORITE_REWARD_USD);
+            var newBal = roundUsd((targetUser.balance || 0) + favoriteRewardUsd);
             await patchUserBalanceAndTokensInCloud(uploaderUid, newBal, targetUser.tokens || 0);
           }
         }
@@ -5103,7 +5334,7 @@
           el.innerHTML =
             '<div style="text-align:center; padding:16px 8px;">' +
               '<i class="fa-solid fa-sack-dollar gold-icon" style="font-size:32px; margin-bottom:10px;"></i>' +
-              '<p style="font-size:13px; color:var(--text-muted); margin-bottom:14px;">Login or register to track your Dollar Balance ($), upload rewards, favorite rewards, and Popular Top 3 bonuses.</p>' +
+              '<p style="font-size:13px; color:var(--text-muted); margin-bottom:14px;">Login or register to track your upload rewards, favorite rewards, and Popular Top 3 bonuses.</p>' +
               '<button class="btn btn-primary" onclick="openAuthPage(\'login\')"><i class="fa-solid fa-right-to-bracket"></i> Login / Register</button>' +
             '</div>';
           return;
@@ -5117,22 +5348,26 @@
             mySubs.some(function (s) { return isSameWebsiteOrApp(s.url, s.name, a.url, a.name); });
         }).length;
 
-        el.innerHTML =
-          '<div class="earnings-stat-grid">' +
-            '<div class="earnings-stat-card">' +
+        var balanceStatCardHtml = showBalanceOnSite
+          ? '<div class="earnings-stat-card">' +
               '<div class="info-kv-label">Total Balance</div>' +
               '<div class="earnings-stat-val">' + formatUsd(currentUser.balance || 0) + '</div>' +
-            '</div>' +
+            '</div>'
+          : '';
+
+        el.innerHTML =
+          '<div class="earnings-stat-grid">' +
+            balanceStatCardHtml +
             '<div class="earnings-stat-card">' +
-              '<div class="info-kv-label">Uploads ($0.30 ea)</div>' +
+              '<div class="info-kv-label">Uploads (' + formatUsd(uploadRewardUsd) + ' ea)</div>' +
               '<div class="earnings-stat-val">' + formatUsd(stats.uploadEarnings || 0) + '</div>' +
             '</div>' +
             '<div class="earnings-stat-card">' +
-              '<div class="info-kv-label">Favorites ($0.80 ea)</div>' +
+              '<div class="info-kv-label">Favorites (' + formatUsd(favoriteRewardUsd) + ' ea)</div>' +
               '<div class="earnings-stat-val">' + formatUsd(stats.favoriteEarnings || 0) + '</div>' +
             '</div>' +
             '<div class="earnings-stat-card">' +
-              '<div class="info-kv-label">Top 3 ($2.50/day)</div>' +
+              '<div class="info-kv-label">Top 3 (' + formatUsd(top3DailyRewardUsd) + '/day)</div>' +
               '<div class="earnings-stat-val">' + formatUsd(stats.top3DailyEarnings || 0) + '</div>' +
             '</div>' +
           '</div>' +
@@ -5146,7 +5381,12 @@
       }
 
       function openSettingsEarningsPage() {
-        checkAndCreditPopularTop3DailyRewards();
+        fetchAdminConfigAndBrandingSilently().then(function () {
+          checkAndCreditPopularTop3DailyRewards();
+          renderEarningsRulesList();
+          renderEarningsDashboard();
+        });
+        renderEarningsRulesList();
         renderEarningsDashboard();
         openSubPage("settings-earnings");
       }
@@ -5154,8 +5394,9 @@
       function refreshEarningsPage() {
         fetchApps(false).then(function () {
           checkAndCreditPopularTop3DailyRewards();
+          renderEarningsRulesList();
           renderEarningsDashboard();
-          showToast("Creator earnings refreshed!");
+          showToast("Creator earnings & prices refreshed!");
         });
       }
 
@@ -5211,9 +5452,9 @@
 
           var startUrl = window.location.href.split("#")[0];
           var manifestObj = {
-            name: "OSSIAN PRO",
-            short_name: "OSSIAN PRO",
-            description: "OSSIAN PRO - Fast, secure Web Apps Launcher",
+            name: "OSSIAN STORE",
+            short_name: "OSSIAN STORE",
+            description: "OSSIAN STORE - Fast, secure Web Apps Launcher",
             start_url: startUrl,
             scope: "./",
             display: "standalone",
@@ -5243,7 +5484,7 @@
           safeSet("ossian_pwa_installed_v1", "yes");
           updateDirectDownloadUI();
           closeModal("pwaDownloadModal");
-          showToast("OSSIAN PRO App installed! Auto-updates enabled.");
+          showToast("OSSIAN STORE App installed! Auto-updates enabled.");
         });
 
         if ("serviceWorker" in navigator && /^https?:$/i.test(window.location.protocol)) {
@@ -5255,7 +5496,7 @@
               if (newWorker) {
                 newWorker.addEventListener("statechange", function () {
                   if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
-                    showToast("Website updated! Updating OSSIAN PRO App...");
+                    showToast("Website updated! Updating OSSIAN STORE App...");
                     setTimeout(function () { window.location.reload(); }, 1000);
                   }
                 });
@@ -5278,14 +5519,14 @@
         if (!sub || !badge) return;
 
         if (isRunningStandalonePwa()) {
-          sub.textContent = "Installed • Live Auto-Updates Active";
+          sub.textContent = "Installed PWA • Live Auto-Updates Active";
           badge.textContent = "Installed";
         } else if (deferredInstallPrompt) {
           sub.textContent = "Ready! Tap to download app in <5 sec";
           badge.textContent = "Install";
         } else {
-          sub.textContent = "Download Mobile App  • Auto-Updates";
-          badge.textContent = "ADS";
+          sub.textContent = "Download Mobile App (PWA • Auto-Updates)";
+          badge.textContent = "PWA";
         }
       }
 
@@ -5302,7 +5543,7 @@
               deferredInstallPrompt = null;
               safeSet("ossian_pwa_installed_v1", "yes");
               updateDirectDownloadUI();
-              showToast("Downloading OSSIAN PRO app...");
+              showToast("Downloading OSSIAN STORE PWA app...");
               return;
             }
           } catch (err) {}
@@ -5314,7 +5555,7 @@
         var fallbackBox = document.getElementById("pwaManualFallbackBox");
         var pkgBtn = document.getElementById("pwaInstantPackageBtn");
         bar.style.width = "10%";
-        status.textContent = "Preparing OSSIAN PRO app...";
+        status.textContent = "Preparing OSSIAN STORE PWA app...";
         fallbackBox.style.display = "none";
         pkgBtn.style.display = "none";
         document.getElementById("pwaDownloadModal").classList.add("open");
@@ -5328,21 +5569,21 @@
             bar.style.width = "100%";
 
             if (isRunningStandalonePwa()) {
-              status.textContent = "OSSIAN PRO  is installed & synced with latest website!";
+              status.textContent = "OSSIAN STORE PWA is installed & synced with latest website!";
               fallbackBox.style.display = "block";
-              fallbackBox.innerHTML = "You are already running the installed <strong>OSSIAN PRO App</strong>. Every time the website updates or upgrades, your app updates automatically.";
+              fallbackBox.innerHTML = "You are already running the installed <strong>OSSIAN STORE PWA App</strong>. Every time the website updates or upgrades, your app updates automatically.";
               return;
             }
 
             var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
-            status.textContent = " App Ready! Auto-updates with every website change.";
+            status.textContent = "PWA App Ready! Auto-updates with every website change.";
             fallbackBox.style.display = "block";
             if (isIos) {
               fallbackBox.innerHTML =
                 "<strong>Install on iPhone/iPad (PWA):</strong><br>" +
                 "1. Tap the <strong>Share</strong> icon in Safari.<br>" +
                 "2. Tap <strong>Add to Home Screen</strong>.<br>" +
-                "Whenever OSSIAN PRO updates, your app updates automatically!";
+                "Whenever OSSIAN STORE updates, your app updates automatically!";
             } else {
               fallbackBox.innerHTML =
                 "<strong>Install Mobile App (PWA):</strong><br>" +
@@ -5354,7 +5595,7 @@
           } else {
             bar.style.width = pct + "%";
             if (pct === 40) status.textContent = "Linking live auto-update manifest...";
-            if (pct === 70) status.textContent = "Finalizing OSSIAN PRO mobile app...";
+            if (pct === 70) status.textContent = "Finalizing OSSIAN STORE mobile app...";
           }
         }, 450);
       }
@@ -5363,26 +5604,26 @@
         try {
           var liveUrl = window.location.href.split("#")[0];
           var launcherHtml = /^https?:$/i.test(window.location.protocol)
-            ? '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>OSSIAN PRO</title><meta http-equiv="refresh" content="0;url=' + liveUrl.replace(/"/g, "&quot;") + '"><script>location.replace(' + JSON.stringify(liveUrl) + ');<\/script></head><body style="background:#0b1120;color:#fde047;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">Loading latest OSSIAN PRO...</body></html>'
+            ? '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>OSSIAN STORE</title><meta http-equiv="refresh" content="0;url=' + liveUrl.replace(/"/g, "&quot;") + '"><script>location.replace(' + JSON.stringify(liveUrl) + ');<\/script></head><body style="background:#0b1120;color:#fde047;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">Loading latest OSSIAN STORE...</body></html>'
             : "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
 
           var blob = new Blob([launcherHtml], { type: "text/html" });
           var url = URL.createObjectURL(blob);
           var a = document.createElement("a");
           a.href = url;
-          a.download = "OSSIAN-PRO-App.html";
+          a.download = "OSSIAN-STORE-App.html";
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
           setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
-          showToast("OSSIAN PRO App downloaded!");
+          showToast("OSSIAN STORE App downloaded!");
         } catch (e) {
           showToast("Use Browser Menu -> Install App to install PWA");
         }
       }
 
       /* =======================================================
-         BANKING-LEVEL SECURITY & PERMANENT BLACKOUT SHIELD
+         BANKING-LEVEL SECURITY & PERMANENT 4-DIGIT PIN
          ======================================================= */
       function initBankingSecurity() {
         try {
@@ -5398,7 +5639,7 @@
           if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
             navigator.mediaDevices.getDisplayMedia = function () {
               triggerBlackoutFlash(true);
-              showToast("Screen recording blocked by OSSIAN PRO Security!");
+              showToast("Screen recording blocked by OSSIAN STORE Security!");
               return Promise.reject(new DOMException("Screen capture disabled by Banking Security", "NotAllowedError"));
             };
           }
@@ -5428,16 +5669,14 @@
         window.addEventListener("focus", function () {
           deactivateBlackoutOverlay();
           if (currentUser) syncLatestUserWalletFromCloud(false);
-          fetchSiteBrandingSilently();
+          fetchAdminConfigAndBrandingSilently();
         });
 
-        // Listen for cross-window OSSIAN TOK deductions from launched apps/websites
         window.addEventListener("message", function (ev) {
           var d = ev && ev.data;
           if (!d || typeof d !== "object") return;
           if (d.type === "OSSIAN_TOK_DEDUCT" || d.type === "OSSIAN_TOK_USE") {
             if (!currentUser || currentUser.suspended) return;
-            // Block if message specifies another user's UID
             if (d.uid && String(d.uid).trim() !== currentUser.uid) {
               showToast("Security Alert: Cross-user token usage blocked!");
               return;
@@ -5473,7 +5712,7 @@
                 navigator.clipboard.writeText("");
               }
             } catch (err) {}
-            showToast("Capture blocked by OSSIAN PRO Banking Security!");
+            showToast("Capture blocked by OSSIAN STORE Banking Security!");
           }
         }, true);
 
@@ -5497,7 +5736,7 @@
         if (withMessage) {
           shield.classList.add("interactive");
           shield.innerHTML = '<i class="fa-solid fa-shield-halved" style="font-size:36px;color:#f59e0b;margin-bottom:12px;"></i>' +
-            '<div style="color:#ffffff;font-size:16px;font-weight:800;margin-bottom:6px;">OSSIAN PRO Privacy Blackout</div>' +
+            '<div style="color:#ffffff;font-size:16px;font-weight:800;margin-bottom:6px;">OSSIAN STORE Privacy Blackout</div>' +
             '<div style="font-size:12.5px;color:#94a3b8;">Capture and screen recording are blocked for your security.</div>';
         } else {
           shield.classList.remove("interactive");
@@ -5581,6 +5820,30 @@
         } catch (e) {}
       }
 
+      function resetRemovePinConfirmBtn() {
+        removePinConfirmPending = false;
+        clearTimeout(removePinConfirmTimer);
+        var btn = document.getElementById("removePinBtn");
+        if (btn) {
+          btn.innerHTML = '<i class="fa-solid fa-trash"></i> Remove PIN';
+        }
+      }
+
+      function handleRemoveBankingPinClick() {
+        if (!bankingPinHash) return;
+        var btn = document.getElementById("removePinBtn");
+        if (!removePinConfirmPending) {
+          removePinConfirmPending = true;
+          if (btn) btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Confirm Remove';
+          clearTimeout(removePinConfirmTimer);
+          removePinConfirmTimer = setTimeout(resetRemovePinConfirmBtn, 5000);
+          showToast("Tap 'Confirm Remove' within 5s to remove your 4-digit PIN.");
+          return;
+        }
+        resetRemovePinConfirmBtn();
+        removeBankingPin();
+      }
+
       async function removeBankingPin() {
         bankingPinHash = "";
         pinFailCount = 0;
@@ -5588,6 +5851,7 @@
         safeRemove("ossian_banking_pin_v1");
         safeSet("ossian_pin_fails_v1", "0");
         safeSet("ossian_pin_lock_v1", "0");
+        await idbSetMeta("banking_pin_hash", "");
         if (currentUser) {
           currentUser.bankingPinHash = "";
           saveOrUpdateLocalUser(currentUser);
@@ -5595,7 +5859,7 @@
           await syncBankingPinToCloud("");
         }
         updateBankingSecurityUI();
-        showToast("Banking Security PIN deleted!");
+        showToast("Banking Security PIN removed!");
       }
 
       function toggleBlackoutShield() {
@@ -5623,6 +5887,8 @@
         var txt = document.getElementById("blackoutShieldStatusText");
         var sub = document.getElementById("bankingSecurityRowSub");
         var extra = document.getElementById("pinExtraActions");
+        var setForm = document.getElementById("setPinForm");
+        var activeBanner = document.getElementById("pinActiveBanner");
 
         if (btn) btn.classList.toggle("on", blackoutShieldOn);
         if (txt) {
@@ -5633,6 +5899,12 @@
         if (sub) {
           sub.textContent = "IP Guard Active • " + (bankingPinHash ? "Permanent PIN Active" : "Blackout ON");
         }
+        if (setForm) {
+          setForm.style.display = bankingPinHash ? "none" : "block";
+        }
+        if (activeBanner) {
+          activeBanner.style.display = bankingPinHash ? "flex" : "none";
+        }
         if (extra) {
           extra.style.display = bankingPinHash ? "grid" : "none";
         }
@@ -5640,6 +5912,7 @@
       }
 
       function openBankingSecurityPage() {
+        resetRemovePinConfirmBtn();
         updateBankingSecurityUI();
         openSubPage("settings-security");
       }
@@ -5718,6 +5991,11 @@
 
       document.getElementById("setPinForm").addEventListener("submit", async function (e) {
         e.preventDefault();
+        if (bankingPinHash) {
+          showToast("A Banking PIN is already active! Remove it first to set a new PIN.");
+          updateBankingSecurityUI();
+          return;
+        }
         var p1 = document.getElementById("newBankingPin").value.trim();
         var p2 = document.getElementById("confirmBankingPin").value.trim();
         if (!/^\d{4}$/.test(p1)) {
@@ -5730,6 +6008,7 @@
         }
         bankingPinHash = await sha256Salted(p1, "OSSIAN_PIN_SALT");
         safeSet("ossian_banking_pin_v1", bankingPinHash);
+        await idbSetMeta("banking_pin_hash", bankingPinHash);
         if (currentUser) {
           currentUser.bankingPinHash = bankingPinHash;
           saveOrUpdateLocalUser(currentUser);
@@ -5770,7 +6049,7 @@
         safeSet("ossian_pin_lock_v1", "0");
         document.getElementById("pinUnlockForm").reset();
         document.getElementById("pinLockOverlay").classList.remove("open");
-        showToast("OSSIAN PRO Unlocked");
+        showToast("OSSIAN STORE Unlocked");
       });
 
       document.getElementById("appPinVerifyForm").addEventListener("submit", async function (e) {
@@ -5812,7 +6091,13 @@
       });
 
       function loadLocalState() {
-        try { recentIds = JSON.parse(safeGet("ossian_recent_v1", "[]")) || []; } catch (e) { recentIds = []; }
+        try {
+          var rawRecents = JSON.parse(safeGet("ossian_recent_v1", "[]")) || [];
+          recentItems = normalizeAndPruneRecentItems(rawRecents);
+          safeSet("ossian_recent_v1", JSON.stringify(recentItems));
+        } catch (e) {
+          recentItems = [];
+        }
         try { favIds = JSON.parse(safeGet("ossian_favs_v1", "[]")) || []; } catch (e) { favIds = []; }
         try { usageMap = JSON.parse(safeGet("ossian_usage_v1", "{}")) || {}; } catch (e) { usageMap = {}; }
         try { registeredUsers = JSON.parse(safeGet("ossian_users_v1", "[]")) || []; } catch (e) { registeredUsers = []; }
@@ -5824,6 +6109,16 @@
         try { uploadAccessMap = JSON.parse(safeGet("ossian_upload_access_v1", "{}")) || {}; } catch (e) { uploadAccessMap = {}; }
         try { favRewardsGivenMap = JSON.parse(safeGet("ossian_fav_rewards_v1", "{}")) || {}; } catch (e) { favRewardsGivenMap = {}; }
         try { creatorStatsMap = JSON.parse(safeGet("ossian_creator_stats_v1", "{}")) || {}; } catch (e) { creatorStatsMap = {}; }
+
+        showBalanceOnSite = safeGet("ossian_show_balance_v1", "on") !== "off";
+        try {
+          var cachedPrices = JSON.parse(safeGet("ossian_earning_prices_v1", "null"));
+          if (cachedPrices && typeof cachedPrices === "object") {
+            if (typeof cachedPrices.upload === "number" && cachedPrices.upload >= 0) uploadRewardUsd = roundUsd(cachedPrices.upload);
+            if (typeof cachedPrices.favorite === "number" && cachedPrices.favorite >= 0) favoriteRewardUsd = roundUsd(cachedPrices.favorite);
+            if (typeof cachedPrices.top3 === "number" && cachedPrices.top3 >= 0) top3DailyRewardUsd = roundUsd(cachedPrices.top3);
+          }
+        } catch (e) {}
 
         var cachedSiteIcon = safeGet("ossian_site_icon_v1", "");
         if (cachedSiteIcon) applySiteWebsiteIcon(cachedSiteIcon);
@@ -6075,7 +6370,7 @@
           id: (docObj.name || "").split("/").pop(),
           title: (titleField && titleField.stringValue) || "Official Notice",
           body: (bodyField && bodyField.stringValue) || "",
-          sender: (senderField && senderField.stringValue) || "OSSIAN PRO Official",
+          sender: (senderField && senderField.stringValue) || "OSSIAN STORE Official",
           createdAt: ts
         };
       }
@@ -6281,6 +6576,7 @@
             if (!bankingPinHash && cloudUser.bankingPinHash) {
               bankingPinHash = cloudUser.bankingPinHash;
               safeSet("ossian_banking_pin_v1", bankingPinHash);
+              idbSetMeta("banking_pin_hash", bankingPinHash);
               updateBankingSecurityUI();
               openPinLockOverlay();
             }
@@ -6391,13 +6687,13 @@
             .map(parseFirestoreDoc);
           apps.sort(function (a, b) { return (b.createdAt || 0) - (a.createdAt || 0); });
 
-          await fetchSiteBrandingSilently(rawAppDocs.concat(rawToolDocs || []));
+          await fetchAdminConfigAndBrandingSilently(rawAppDocs.concat(rawToolDocs || []));
 
           isLoaded = true;
           dbStatusMessage = "Cloud Connected";
           setDbStatus('<i class="fa-solid fa-circle-check"></i> Cloud Connected', "#10b981");
           checkAndCreditPopularTop3DailyRewards();
-          if (showMsg) showToast("Apps, tools & icon refreshed!");
+          if (showMsg) showToast("Apps, tools & settings refreshed!");
         } catch (err) {
           isLoaded = true;
           const errText = err && err.message ? err.message : "Network error";
@@ -6882,8 +7178,7 @@
         if (!query) return true;
         return (app.name || "").toLowerCase().includes(query) ||
           (app.description || "").toLowerCase().includes(query) ||
-          (app.category || "").toLowerCase().includes(query) ||
-          (app.url || "").toLowerCase().includes(query);
+          (app.category || "").toLowerCase().includes(query);
       }
 
       function renderSuggestions(inputId, boxId) {
@@ -6939,6 +7234,8 @@
         renderAppsPage();
         renderMePage();
         updateSyncUI();
+        applyBalanceVisibilityUI();
+        applyDynamicEarningsUI();
       }
 
       function renderHome() {
@@ -7053,23 +7350,24 @@
       }
 
       function renderMePage() {
+        pruneAndSaveRecentItems();
         var combinedSearchPool = apps.concat(adminTools);
-        var recentApps = recentIds.map(function (id) {
-          return combinedSearchPool.find(function (a) { return a.id === id; });
+        var recentApps = recentItems.map(function (entry) {
+          return combinedSearchPool.find(function (a) { return a.id === entry.id; });
         }).filter(Boolean);
 
         document.getElementById("recentAppsGrid").innerHTML = createLauncherGridHtml(
           recentApps,
           "fa-clock-rotate-left",
-          "Apps you open will appear here for quick access.",
+          "Apps you use remain here for 72 hours.",
           false
         );
 
         var recentSubEl = document.getElementById("recentRowSub");
         if (recentSubEl) {
           recentSubEl.textContent = recentApps.length > 0
-            ? recentApps.length + " recently opened app" + (recentApps.length === 1 ? "" : "s")
-            : "Apps you opened recently";
+            ? recentApps.length + " app" + (recentApps.length === 1 ? "" : "s") + " (kept for 72 hours)"
+            : "Apps used in the last 72 hours";
         }
 
         updateMeAccountUI();
@@ -7077,6 +7375,7 @@
         updateBankingSecurityUI();
         updateSettingsRowSummaries();
         updateDirectDownloadUI();
+        applyBalanceVisibilityUI();
       }
 
       function updateMeAccountUI() {
@@ -7111,7 +7410,7 @@
           if (heroTokEl) heroTokEl.textContent = formatNumber(tok);
           if (heroTitleEl) heroTitleEl.innerHTML = '<i class="fa-solid fa-crown gold-icon"></i> ' + escapeHtml(currentUser.name);
         } else {
-          titleEl.textContent = "OSSIAN PRO";
+          titleEl.textContent = "OSSIAN STORE";
           subEl.textContent = "Register to get 5K free tokens & open apps";
           authSubEl.textContent = "Sign in with email or QR code";
           if (tokSubEl) tokSubEl.textContent = "Private Token QR, reset & weekly 6-digit password";
@@ -7120,7 +7419,7 @@
           if (meTokEl) meTokEl.textContent = "0";
           if (heroBalEl) heroBalEl.textContent = "$0.00";
           if (heroTokEl) heroTokEl.textContent = "0";
-          if (heroTitleEl) heroTitleEl.innerHTML = '<i class="fa-solid fa-crown gold-icon"></i> Welcome to OSSIAN PRO';
+          if (heroTitleEl) heroTitleEl.innerHTML = '<i class="fa-solid fa-crown gold-icon"></i> Welcome to OSSIAN STORE';
         }
 
         if (officialMessages.length > 0) {
@@ -7134,6 +7433,7 @@
             ? redeemedPromos.length + " promo code" + (redeemedPromos.length === 1 ? "" : "s") + " applied"
             : "Apply promo codes & rewards";
         }
+        applyBalanceVisibilityUI();
       }
 
       function updateSyncUI() {
@@ -7171,9 +7471,12 @@
         }
         var earnSub = document.getElementById("earningsRowSub");
         if (earnSub) {
-          earnSub.textContent = currentUser
-            ? "Balance: " + formatUsd(currentUser.balance || 0) + " • $0.30 / $0.80 / $2.50"
-            : "$0.30 Upload • $0.80 Fav • $2.50/day Top 3";
+          var upStr = formatUsd(uploadRewardUsd);
+          var favStr = formatUsd(favoriteRewardUsd);
+          var topStr = formatUsd(top3DailyRewardUsd);
+          earnSub.textContent = (showBalanceOnSite && currentUser)
+            ? "Balance: " + formatUsd(currentUser.balance || 0) + " • " + upStr + " / " + favStr + " / " + topStr
+            : upStr + " Upload • " + favStr + " Fav • " + topStr + "/day Top 3";
         }
         var apptSub = document.getElementById("appointmentsRowSub");
         if (apptSub) {
@@ -7224,6 +7527,7 @@
         }
         if (!autoRefreshOn) return;
         autoRefreshTimerId = setInterval(function () {
+          pruneAndSaveRecentItems();
           fetchApps(false);
           fetchMessages(false);
           fetchPromoCodes();
@@ -7482,6 +7786,7 @@
       function openSubmitAppPage() {
         var errBox = document.getElementById("submitDuplicateError");
         if (errBox) errBox.classList.remove("show");
+        applyDynamicEarningsUI();
         renderSubmitAppLockState();
         renderSubmittedAppsList();
         openSubPage("settings-submit-app");
@@ -7663,6 +7968,7 @@
         if (currentUser && currentUser.bankingPinHash && !bankingPinHash) {
           bankingPinHash = currentUser.bankingPinHash;
           safeSet("ossian_banking_pin_v1", bankingPinHash);
+          await idbSetMeta("banking_pin_hash", bankingPinHash);
           updateBankingSecurityUI();
         }
         document.getElementById("loginForm").reset();
@@ -7862,7 +8168,7 @@
           '</form>' +
           '<div class="qr-preview-box" id="qrPreviewBox">' +
             '<div style="font-size:13.5px; font-weight:800; margin-bottom:4px;">' +
-              '<i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Your Private OSSIAN PRO Login QR' +
+              '<i class="fa-solid fa-circle-check" style="color:#10b981;"></i> Your Private OSSIAN STORE Login QR' +
             '</div>' +
             '<div style="font-size:11.5px; color:var(--text-muted);">Encrypted QR • Zero user details exposed if scanned in Google.</div>' +
             '<div class="qr-canvas-wrap">' +
@@ -7922,7 +8228,6 @@
           return;
         }
 
-        // Encrypted opaque payload: zero plaintext name/email/uid visible if scanned in Google
         var sealedPayload = sealQrPayload("OPR1", {
           u: currentUser.uid,
           e: currentUser.email,
@@ -7958,7 +8263,7 @@
           }
         }
 
-        var badgeW = 92;
+        var badgeW = 108;
         var badgeH = 26;
         var bx = (size - badgeW) / 2;
         var by = (size - badgeH) / 2;
@@ -7977,10 +8282,10 @@
         ctx.stroke();
 
         ctx.fillStyle = "#fde047";
-        ctx.font = "800 11.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+        ctx.font = "800 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillText("OSSIAN PRO", size / 2, size / 2 + 0.5);
+        ctx.fillText("OSSIAN STORE", size / 2, size / 2 + 0.5);
       }
 
       function drawRoundedRect(ctx, x, y, w, h, r) {
@@ -8004,7 +8309,7 @@
           var dataUrl = canvas.toDataURL("image/png");
           var link = document.createElement("a");
           link.href = dataUrl;
-          link.download = "OSSIAN-PRO-LOGIN-QR.png";
+          link.download = "OSSIAN-STORE-LOGIN-QR.png";
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -8192,7 +8497,6 @@
           return;
         }
 
-        // Strictly reject OSSIAN TOK QRs here so another user's Token QR cannot be used in another account
         if (unsealed.prefix === "OTK1") {
           showToast("Access Denied! Another user's Token QR cannot be used here.");
           return;
@@ -8228,7 +8532,7 @@
           }
           matchedUser = Object.assign({}, matchedUser || {}, {
             uid: cloudUser.uid,
-            name: cloudUser.name || "OSSIAN PRO User",
+            name: cloudUser.name || "OSSIAN STORE User",
             email: cloudUser.email,
             password: (matchedUser && matchedUser.password) || "",
             passwordHash: cloudUser.passwordHash || "",
@@ -8281,6 +8585,7 @@
         if (currentUser && currentUser.bankingPinHash && !bankingPinHash) {
           bankingPinHash = currentUser.bankingPinHash;
           safeSet("ossian_banking_pin_v1", bankingPinHash);
+          await idbSetMeta("banking_pin_hash", bankingPinHash);
           updateBankingSecurityUI();
         }
         updateMeAccountUI();
@@ -8471,9 +8776,9 @@
         var base = "";
         try {
           base = window.location.href.split("?")[0].split("#")[0];
-          if (!/^https?:/i.test(base)) base = "https://ossian-pro.app/";
+          if (!/^https?:/i.test(base)) base = "https://ossian-store.app/";
         } catch (e) {
-          base = "https://ossian-pro.app/";
+          base = "https://ossian-store.app/";
         }
         return base + "?invite=" + encodeURIComponent(code);
       }
@@ -8496,7 +8801,7 @@
         var inviteLink = getPersonalInviteLink(code);
 
         body.innerHTML =
-          '<p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:14px;">Share your personal invite link or permanent 5-digit invite code with friends to invite them to OSSIAN PRO.</p>' +
+          '<p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:14px;">Share your personal invite link or permanent 5-digit invite code with friends to invite them to OSSIAN STORE.</p>' +
           '<div class="info-kv-item" style="margin-bottom:12px;">' +
             '<div><div class="info-kv-label">Your 5-Digit Invite Code (Permanent)</div><div class="info-kv-val">' + escapeHtml(code) + '</div></div>' +
             '<button class="btn btn-secondary btn-xs" onclick="copyTextValue(\'' + escapeHtml(code) + '\', \'Invite code copied!\')">' +
@@ -8512,7 +8817,7 @@
           '</div>';
       }
 
-      /* Submit Application Page (With Duplicate Check + $0.30 Reward) */
+      /* Submit Application Page (Duplicate Check + Dynamic Upload Reward) */
       document.getElementById("submitAppForm").addEventListener("submit", async function (e) {
         e.preventDefault();
         var dupBox = document.getElementById("submitDuplicateError");
@@ -8585,9 +8890,9 @@
         allCloudSubmittedApps.unshift(appItem);
         safeSet("ossian_submitted_apps_v1", JSON.stringify(submittedApps));
 
-        currentUser.balance = roundUsd((currentUser.balance || 0) + UPLOAD_REWARD_USD);
+        currentUser.balance = roundUsd((currentUser.balance || 0) + uploadRewardUsd);
         var stats = getCreatorStatsForUid(currentUser.uid);
-        stats.uploadEarnings = roundUsd((stats.uploadEarnings || 0) + UPLOAD_REWARD_USD);
+        stats.uploadEarnings = roundUsd((stats.uploadEarnings || 0) + uploadRewardUsd);
         saveCreatorStatsMap();
         saveOrUpdateLocalUser(currentUser);
         saveCurrentUserSession(currentUser);
@@ -8602,8 +8907,8 @@
 
         var synced = await syncSubmittedAppToCloudSilently(appItem, false);
         showToast(synced
-          ? "Website submitted! +$0.30 added to your Balance!"
-          : "Saved locally! +$0.30 added to your Balance.");
+          ? "Website submitted! +" + formatUsd(uploadRewardUsd) + " added to your Balance!"
+          : "Saved locally! +" + formatUsd(uploadRewardUsd) + " added to your Balance.");
       });
 
       function getStageLabel(stageNum) {
@@ -8830,16 +9135,20 @@
           ? '<span style="color:#ef4444;">Suspended (Duplicate Account)</span>'
           : '<span style="color:#10b981;">Main Account • Active</span>';
 
+        var balanceRowHtml = showBalanceOnSite
+          ? '<div class="info-kv-item">' +
+              '<div><div class="info-kv-label">Balance</div><div class="info-kv-val">' + formatUsd(bal) + '</div></div>' +
+              '<i class="fa-solid fa-wallet gold-icon"></i>' +
+            '</div>'
+          : '';
+
         body.innerHTML =
           '<div class="info-kv-list">' +
             '<div class="info-kv-item">' +
               '<div><div class="info-kv-label">1. Name</div><div class="info-kv-val">' + escapeHtml(currentUser.name) + '</div></div>' +
               '<i class="fa-solid fa-user gold-icon"></i>' +
             '</div>' +
-            '<div class="info-kv-item">' +
-              '<div><div class="info-kv-label">Balance</div><div class="info-kv-val">' + formatUsd(bal) + '</div></div>' +
-              '<i class="fa-solid fa-wallet gold-icon"></i>' +
-            '</div>' +
+            balanceRowHtml +
             '<div class="info-kv-item">' +
               '<div><div class="info-kv-label">Remaining Tokens</div><div class="info-kv-val">' + formatNumber(tok) + ' Tokens</div></div>' +
               '<i class="fa-solid fa-coins gold-icon"></i>' +
@@ -8901,7 +9210,7 @@
           el.innerHTML =
             '<div style="text-align:center;padding:24px 12px;color:var(--text-muted);background:var(--surface-2);border:1px dashed var(--border);border-radius:16px;font-size:13px;line-height:1.5;">' +
               '<i class="fa-solid fa-envelope-open gold-icon" style="font-size:24px;margin-bottom:8px;display:block;"></i>' +
-              'No official messages yet. When OSSIAN PRO sends an official message, it will appear here.' +
+              'No official messages yet. When OSSIAN STORE sends an official message, it will appear here.' +
             '</div>';
           return;
         }
@@ -8942,8 +9251,10 @@
       }
 
       function trackAppOpen(id) {
-        recentIds = [id].concat(recentIds.filter(function (x) { return x !== id; })).slice(0, 8);
-        safeSet("ossian_recent_v1", JSON.stringify(recentIds));
+        pruneAndSaveRecentItems();
+        recentItems = [{ id: id, openedAt: Date.now() }]
+          .concat(recentItems.filter(function (x) { return x.id !== id; }));
+        safeSet("ossian_recent_v1", JSON.stringify(recentItems));
 
         usageMap[id] = (usageMap[id] || 0) + 1;
         safeSet("ossian_usage_v1", JSON.stringify(usageMap));
@@ -9056,15 +9367,13 @@
         if (!app) return;
         currentModalId = id;
         var safeUrl = normalizeUrl(app.url);
-        currentModalUrl = safeUrl;
 
         var iconContainer = document.getElementById("modalIconBox");
         iconContainer.outerHTML = createAppIconHtml(app, "lg").replace('class="app-icon-box lg"', 'id="modalIconBox" class="app-icon-box lg"');
 
         document.getElementById("modalAppName").textContent = app.name;
         document.getElementById("modalAppCat").textContent = app.category || (app.isTool ? "Tools" : "Other");
-        document.getElementById("modalAppUrl").textContent = safeUrl;
-        document.getElementById("modalAppDesc").textContent = app.description || "Launch this web app directly from OSSIAN PRO.";
+        document.getElementById("modalAppDesc").textContent = app.description || "Launch this web app directly from OSSIAN STORE.";
 
         var isPaidApp = Boolean(app.isPaid || app.tokenCost > 0);
         var reqTok = app.tokenCost > 0 ? app.tokenCost : 1;
@@ -9081,25 +9390,22 @@
 
         updateModalTokenWarning(app);
 
-        // Live sync latest tokens from Firestore while modal is open
         syncLatestUserWalletFromCloud(false).then(function () {
           if (currentModalId === id) {
             updateModalTokenWarning(app);
           }
         });
 
-        var launchLink = document.getElementById("modalLaunchLink");
-        launchLink.href = safeUrl;
-        launchLink.onclick = function (ev) {
+        var launchBtn = document.getElementById("modalLaunchBtn");
+        launchBtn.onclick = function (ev) {
+          ev.preventDefault();
           if (!currentUser) {
-            ev.preventDefault();
             closeModal("appModal");
             showToast("Please register or login first!");
             openAuthPage("register");
             return false;
           }
           if (currentUser.suspended) {
-            ev.preventDefault();
             closeModal("appModal");
             updateSuspendedOverlay(null);
             return false;
@@ -9107,14 +9413,12 @@
 
           var curTokens = Math.max(0, Math.floor(Number(currentUser.tokens || 0)));
           if (isPaidApp && (curTokens <= 0 || curTokens < reqTok)) {
-            ev.preventDefault();
             updateModalTokenWarning(app);
             showToast("0 or insufficient Tokens! Paid website/app cannot run.");
             return false;
           }
 
           if (bankingPinHash) {
-            ev.preventDefault();
             if (updatePinLockTimerUI()) {
               showToast("PIN locked! Please wait for timer.");
               return false;
@@ -9127,12 +9431,10 @@
             return false;
           }
 
-          var launched = completeAppLaunch(app, safeUrl, false);
-          if (!launched) {
-            ev.preventDefault();
-            return false;
+          var launched = completeAppLaunch(app, safeUrl, true);
+          if (launched) {
+            updateModalTokenWarning(app);
           }
-          updateModalTokenWarning(app);
         };
 
         updateModalFavBtn();
@@ -9193,10 +9495,6 @@
         }
       }
 
-      function copyModalLink() {
-        copyTextValue(currentModalUrl, "Link copied!");
-      }
-
       var toastTimer;
       function showToast(msg) {
         var toast = document.getElementById("toast");
@@ -9223,7 +9521,6 @@
       window.pickSuggestion = pickSuggestion;
       window.closeModal = closeModal;
       window.closeModalOnOverlay = closeModalOnOverlay;
-      window.copyModalLink = copyModalLink;
       window.copyTextValue = copyTextValue;
       window.trackAppOpen = trackAppOpen;
       window.toggleFavorite = toggleFavorite;
@@ -9257,7 +9554,7 @@
       window.openBankingSecurityPage = openBankingSecurityPage;
       window.toggleBlackoutShield = toggleBlackoutShield;
       window.lockAppWithPinNow = lockAppWithPinNow;
-      window.removeBankingPin = removeBankingPin;
+      window.handleRemoveBankingPinClick = handleRemoveBankingPinClick;
       window.pastePinInto = pastePinInto;
       window.openCustomerServiceModal = openCustomerServiceModal;
       window.logoutSuspendedToMain = logoutSuspendedToMain;
@@ -9283,6 +9580,8 @@
 
       loadTheme();
       loadLocalState();
+      applyBalanceVisibilityUI();
+      applyDynamicEarningsUI();
       initPwaEngine();
       initBankingSecurity();
       initDeviceAndIpSecurity().then(function () {
@@ -9313,6 +9612,7 @@
       });
       document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
       document.getElementById("refreshBtn").addEventListener("click", function () {
+        pruneAndSaveRecentItems();
         fetchApps(true);
         fetchMessages(false);
         fetchPromoCodes();
