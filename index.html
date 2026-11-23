@@ -2437,7 +2437,7 @@
           <form id="registerForm" style="display:none;">
             <div class="security-notice-bar">
               <i class="fa-solid fa-gift gold-icon"></i>
-              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! Welcome to our website &amp;</span>
+              <span>Register now &amp; get <strong>5,000 Free Tokens</strong>! Welcome to our website...</span>
             </div>
             <div class="form-group">
               <label>1. Name</label>
@@ -5278,14 +5278,14 @@
         if (!sub || !badge) return;
 
         if (isRunningStandalonePwa()) {
-          sub.textContent = "Installed PWA • Live Auto-Updates Active";
+          sub.textContent = "Installed • Live Auto-Updates Active";
           badge.textContent = "Installed";
         } else if (deferredInstallPrompt) {
           sub.textContent = "Ready! Tap to download app in <5 sec";
           badge.textContent = "Install";
         } else {
-          sub.textContent = "Download Mobile App (PWA • Auto-Updates)";
-          badge.textContent = "PWA";
+          sub.textContent = "Download Mobile App  • Auto-Updates";
+          badge.textContent = "ADS";
         }
       }
 
@@ -5302,7 +5302,7 @@
               deferredInstallPrompt = null;
               safeSet("ossian_pwa_installed_v1", "yes");
               updateDirectDownloadUI();
-              showToast("Downloading OSSIAN PRO PWA app...");
+              showToast("Downloading OSSIAN PRO app...");
               return;
             }
           } catch (err) {}
@@ -5314,7 +5314,7 @@
         var fallbackBox = document.getElementById("pwaManualFallbackBox");
         var pkgBtn = document.getElementById("pwaInstantPackageBtn");
         bar.style.width = "10%";
-        status.textContent = "Preparing OSSIAN PRO PWA app...";
+        status.textContent = "Preparing OSSIAN PRO app...";
         fallbackBox.style.display = "none";
         pkgBtn.style.display = "none";
         document.getElementById("pwaDownloadModal").classList.add("open");
@@ -5328,14 +5328,14 @@
             bar.style.width = "100%";
 
             if (isRunningStandalonePwa()) {
-              status.textContent = "OSSIAN PRO PWA is installed & synced with latest website!";
+              status.textContent = "OSSIAN PRO  is installed & synced with latest website!";
               fallbackBox.style.display = "block";
-              fallbackBox.innerHTML = "You are already running the installed <strong>OSSIAN PRO PWA App</strong>. Every time the website updates or upgrades, your app updates automatically.";
+              fallbackBox.innerHTML = "You are already running the installed <strong>OSSIAN PRO App</strong>. Every time the website updates or upgrades, your app updates automatically.";
               return;
             }
 
             var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
-            status.textContent = "PWA App Ready! Auto-updates with every website change.";
+            status.textContent = " App Ready! Auto-updates with every website change.";
             fallbackBox.style.display = "block";
             if (isIos) {
               fallbackBox.innerHTML =
